@@ -1,4 +1,4 @@
-# Javascript Quick Starter
+# Javascript Quick Starter or the complete webDeveloper
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
@@ -12,7 +12,12 @@
 
 - [ ] [modernReactWithRedux](https://www.udemy.com/react-redux/)
 
-- [ ] []()
+- [ ] [javascriptTheWeirdParts](https://www.udemy.com/understand-javascript/)
+
+- [ ] [thejsWayFrench&Answer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway)
+
+- [ ] [regularExpressions](https://regexone.com/)
+
 
 
 ## Books
@@ -38,7 +43,7 @@ console.log("Goodbye!");
 ```
 ```javascript
 let a;
-console.log(a);  # undefined
+console.log(a);  // undefined
 ```
 ## Difference between let and var (ECMAScript 6 2015)
 ![](img/2019-01-29-17-26-06.png)
