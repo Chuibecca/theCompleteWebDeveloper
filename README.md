@@ -1,8 +1,11 @@
 # Javascript Quick Starter
 ## online courses
-[javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
+- [] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
+
 [webDevlopperFromZerotoMastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/)
+
 [WebDevBootcamp](https://www.udemy.com/the-web-developer-bootcamp/)
+
 [ModernReactWithRedux](https://www.udemy.com/react-redux/)
 
 ## Some routines
