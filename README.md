@@ -1,6 +1,6 @@
 # Javascript Quick Starter
 ## online courses
-- [] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
+- [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
 
 [webDevlopperFromZerotoMastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/)
 
