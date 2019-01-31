@@ -1,12 +1,19 @@
 # Javascript Quick Starter
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+----
 ## online courses
 - [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
 
-[webDevlopperFromZerotoMastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/)
+- [ ] [webDevlopperFromZerotoMastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/)
 
-[WebDevBootcamp](https://www.udemy.com/the-web-developer-bootcamp/)
+- [ ] [WebDevBootcamp](https://www.udemy.com/the-web-developer-bootcamp/)
 
-[ModernReactWithRedux](https://www.udemy.com/react-redux/)
+- [ ] [ModernReactWithRedux](https://www.udemy.com/react-redux/)
+
+
+## Books
 
 ## Some routines
 ```javascript
