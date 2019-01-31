@@ -8,12 +8,19 @@
 
 - [ ] [webDevlopperFromZerotoMastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/)
 
-- [ ] [WebDevBootcamp](https://www.udemy.com/the-web-developer-bootcamp/)
+- [ ] [webDevBootcamp](https://www.udemy.com/the-web-developer-bootcamp/)
 
-- [ ] [ModernReactWithRedux](https://www.udemy.com/react-redux/)
+- [ ] [modernReactWithRedux](https://www.udemy.com/react-redux/)
+
+- [ ] []()
 
 
 ## Books
+[eloquent javascript](https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_7?ie=UTF8&qid=1548950313&sr=8-7&keywords=javascript)
+[Secrets of the JavaScript Ninja](https://www.amazon.com/dp/1617292850/ref=sspa_dk_detail_1?psc=1)
+[javascriptThegoodparts](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?s=books&ie=UTF8&qid=1548950389&sr=1-1&keywords=javascript+the+good+parts)
+
+
 
 ## Some routines
 ```javascript
