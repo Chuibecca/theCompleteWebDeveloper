@@ -1,4 +1,4 @@
-# Javascript Quick Starter or the complete webDeveloper
+# The complete web developer
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
@@ -14,7 +14,8 @@
 
 - [ ] [javascriptTheWeirdParts](https://www.udemy.com/understand-javascript/)
 
-- [ ] [thejsWayFrench&Answer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway)
+- [ ] [thejsWayAnswer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway) [thejsWayFrench](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published)
+
 
 - [ ] [regularExpressions](https://regexone.com/)
 
@@ -70,7 +71,8 @@ const g = "five" * 2;
 console.log(g); // Show NaN
 const h = "5";
 console.log(h + 1); // Concatenation: show the string "51"
-const i = Number("5");
+const number = Number("5");
+const string = String("6");
 console.log(i + 1); // Numerical addition: show the number 6
 const f = 100;
 // Show "Variable f contains the value 100"
@@ -219,3 +221,6 @@ compte.crediter(-80);
 // "titulaire: Alex, solde: 170"
 console.log(compte.decrire());
 ```
+## Vocabulary
+L'eau bout a 100 degres.
+
