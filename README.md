@@ -267,7 +267,7 @@ compte.crediter(-80);
 console.log(compte.decrire());
 ```
 ## Exercices
-[Answer](https://github.com/oc-courses/intro-javascript)
+[Answerkey](https://github.com/oc-courses/intro-javascript)
 ### Chapter 1
 * Ecrivez un programme qui affiche votre nom, puis votre âge.
 * Ecrivez un programme qui calcule et affiche le résultat de l'addition, de la soustraction, de la multiplication et de la division de 6 par 3.
@@ -282,7 +282,7 @@ console.log("4" + "5"); // "45"
 
 Vérifiez vos prévisions en l'exécutant.
 ### Chapter 2
-* [liste des mots reserves](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Mots_r%C3%A9serv%C3%A9s)
+* [liste des mots reserves dans javascript](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Mots_r%C3%A9serv%C3%A9s)
 * Prediction des valeurs
 ```javascript
 // Prédiction de valeurs
