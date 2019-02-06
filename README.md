@@ -3,6 +3,9 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ----
+## Markdown cheetsheet
+[link](https://en.support.wordpress.com/markdown-quick-reference/)
+
 ## online courses
 - [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
 
@@ -27,6 +30,29 @@
 [javascriptThegoodparts](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?s=books&ie=UTF8&qid=1548950389&sr=1-1&keywords=javascript+the+good+parts)
 
 
+## Bases
+Un programme informatique (également appelé application ou logiciel) est une liste d'ordres indiquant à un ordinateur ce qu'il doit faire.
+
+ce sont les ordres données à la machine, qu'on appelle également des instructions. L'ensemble des fichiers contenant les instructions du programme constitue son code source. Programmer, c'est donc écrire le code source d'un programme, d'où l'emploi du terme coder.
+
+Un langage de programmation définit une manière de donner des ordres à un ordinateur. Un peu comme une langue vivante, tout langage a son vocabulaire (un ensemble de mots-clés, chacun jouant un rôle spécifique) et sa grammaire (un ensemble de règles définissant la manière d'écrire des programmes dans ce langage).
+
+Le seul langage de programmation directement compréhensible par un ordinateur est le langage machine, également appelé assembleur. Il s'agit d'instructions élémentaires liées à un type de processeur (le "cerveau" de l'ordinateur) et qui permettent de manipuler directement la mémoire de la machine(x86=32位处理器).
+
+![](img/2019-02-06-10-58-07.png)
+
+* On nomme exécution le fait de demander à un ordinateur de réaliser les ordres contenus dans un programme.
+
+* Avec certains langages, les lignes du code source sont traduites en assembleur puis exécutées ligne après ligne par un programme spécifique appelé interpréteur. On dit alors que le langage est interprété. Python et PHP sont des exemples de langages interprétés.
+
+* Une autre possibilité consiste à créer à partir de l'ensemble du code source un fichier directement exécutable (sous Windows, il portera l'extension .exe) en utilisant un programme intermédiaire appelé compilateur. On parle alors de langage compilé. Les langages C et C++ sont des exemples de langages compilés.
+
+* Enfin, une troisième option consiste à utiliser un pseudo-compilateur pour générer à partir du code
+source un ensemble de fichiers pouvant être exécutés sur n'importe quelle plate-forme supportant
+l'environnement. C'est le cas du langage Java et des langages de la plate-forme Microsoft .NET
+(VB.NET, C#, etc).
+
+
 
 ## Some routines
 ```javascript
@@ -47,7 +73,26 @@ let a;
 console.log(a);  // undefined
 ```
 ## Difference between let and var (ECMAScript 6 2015)
-![](img/2019-01-29-17-26-06.png)
+
+```javascript
+var x = 10;
+// Here x is 10
+{
+  var x = 2;
+  // Here x is 2
+}
+// Here x is 2
+
+var x = 10;
+// Here x is 10
+{
+  let x = 2;
+  // Here x is 2
+}
+// Here x is 10
+
+```
+
 ```javascript
 let num1 = 0;
 {
@@ -221,6 +266,63 @@ compte.crediter(-80);
 // "titulaire: Alex, solde: 170"
 console.log(compte.decrire());
 ```
-## Vocabulary
-L'eau bout a 100 degres.
+## Exercices
+[Answer](https://github.com/oc-courses/intro-javascript)
+### Chapter 1
+* Ecrivez un programme qui affiche votre nom, puis votre âge.
+* Ecrivez un programme qui calcule et affiche le résultat de l'addition, de la soustraction, de la multiplication et de la division de 6 par 3.
+* Observez le programme puis tentez de prévoir les valeurs affichées lors de son exécution.
+```javascript
+// Prédiction de résultat
 
+console.log(4 + 5); // 9
+console.log("4 + 5"); // "4 + 5"
+console.log("4" + "5"); // "45"
+```
+
+Vérifiez vos prévisions en l'exécutant.
+### Chapter 2
+* [liste des mots reserves](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Mots_r%C3%A9serv%C3%A9s)
+* Prediction des valeurs
+```javascript
+// Prédiction de valeurs
+
+let a = 2;
+a -= 1;
+a++;
+let b = 8;
+b += 2;
+const c = a + b * b;
+const d = a * b + b;
+const e = a * (b + b);
+const f = a * b / a;
+const g = b / a * a;
+
+
+```
+* Convert from Celsius to Fahrenheit
+
+Complétez le programme pour convertir une tempéraure des degrés Celsius en degrés Fahrenheit.
+
+> C'est à Daniel Gabriel Fahrenheit que l'on doit l'invention des thermomètres en graduation Fahrenheit. Au début, ses thermomètres sont à l'alcool (1709), mais il remplace rapidement l'alcool par du mercure (1715), permettant à ses outils de mesure de fournir des données comparables. En 1742, un autre scientifique, Anders Celsius, propose une nouvelle graduation au thermomètre. La conversion entre les échelles est donnée par [°F] = [°C] x 9/5 + 32.
+
+* Complétez le programme afin qu'il permute les valeurs des deux variables.
+
+Il existe plusieurs solutions à cet exercice. Astuce : vous n'êtes pas limité(e) à l'utilisation de deux variables.
+
+```javascript
+let nombre1 = 5;
+let nombre2 = 3;
+
+// Tapez votre code ici (sans rien modifier d'autre !)
+
+console.log(nombre1); // Doit afficher 3
+console.log(nombre2); // Doit afficher 5
+
+```
+
+## Vocabulary
+Le programmeur est un créateur d'univers dont il est seul responsable.
+L'eau bout a 100 degres.
+Depuis son invention dans les années 1950, l'informatique a révolutionné bien des domaines de notre vie quotidienne.
+**Depuis son apparition dans les années 1950, l'informatique a changé beaucoup de domaines de notre vie quotidienne. **
