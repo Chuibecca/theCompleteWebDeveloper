@@ -23,7 +23,11 @@
 		- [Chapter 3](#chapter-3)
 		- [Chapter 4](#chapter-4)
 		- [Chapter 5](#chapter-5)
-
+		- [Chapter 6](#chapter-6)
+		- [Chapter 7](#chapter-7)
+		- [Chapter 8](#chapter-8)
+		- [Chapter 9](#chapter-9)
+	- [Vocabulaire](#vocabulaire)
 
 ## Markdown cheetsheet
 [link](https://en.support.wordpress.com/markdown-quick-reference/)
@@ -38,6 +42,7 @@ git pull origin master --allow-unrelated-histories
 <kbd>zz</kbd> make text center
 : zt zb = top bottom
 <kbd>13gg</kbd> go to 13rd line
+
 ## online courses
 - [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
 
@@ -63,6 +68,7 @@ git pull origin master --allow-unrelated-histories
 
 
 ## Bases
+
 Un programme informatique (également appelé application ou logiciel) est une liste d'ordres indiquant à un ordinateur ce qu'il doit faire.
 
 ce sont les ordres données à la machine, qu'on appelle également des instructions. L'ensemble des fichiers contenant les instructions du programme constitue son code source. Programmer, c'est donc écrire le code source d'un programme, d'où l'emploi du terme coder.
@@ -87,6 +93,7 @@ l'environnement. C'est le cas du langage Java et des langages de la plate-forme 
 
 
 ## Some routines
+
 ```javascript
 console.log("Hello from JavaScript!");
 console.log("Hello from JavaScript!");
@@ -143,6 +150,7 @@ const y = 7;
 console.log(`${x} + ${y} = ${x + y}`); // Show "3 + 7 = 10"
 ```
 ## Type conversion
+
 ```javascript
 const g = "five" * 2;
 console.log(g); // Show NaN
@@ -162,6 +170,7 @@ const temp3 = 37.1;
 console.log(temp1, temp2, temp3); // Show "36.9 37.6 37.1"
 ```
 ## if
+
 ```javascript
 const nombre = 3;
 if (nombre > 0) {
@@ -171,6 +180,7 @@ else {
   console.log(nombre + " est négatif ou nul");
 }
 ```
+
 ```javascript
 const nombre = -3;
 if (nombre > 0) {
@@ -231,6 +241,7 @@ switch (x) {
 ```
 
 ## function vs procedure vs methode
+
 Une fonction qui ne renvoie pas de valeur est parfois appelée une procédure.
 
 ```javascript
@@ -240,6 +251,7 @@ console.log(Math.min(1, 1));   // 1
 
 console.log(Math.random()); // Un nombre aléatoire entre 0 et 1
 ```
+
 ```javascript
 const stylo = {
   type: "bille",
@@ -299,7 +311,9 @@ compte.crediter(-80);
 console.log(compte.decrire());
 ```
 ## Exercices
+
 [Answerkey](https://github.com/oc-courses/intro-javascript)
+
 ### Chapter 1
 * Ecrivez un programme qui affiche votre nom, puis votre âge.
 [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre1_exercice1.js)
@@ -335,7 +349,6 @@ const e = a * (b + b);
 const f = a * b / a;
 const g = b / a * a;
 
-
 ```
 * Convert from Celsius to Fahrenheit
 
@@ -368,7 +381,9 @@ console.log(nombre2); // Doit afficher 5
 
 ```
 ### Chapter 3
+
 * Jour suivant
+
 Affichez le jour suivant.
 > code d'origine
 > [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre3_exercice1.js)
@@ -466,6 +481,7 @@ Cet exercice constitue un **test d'embauche** classique qui élimine un nombre s
 
 > code d'origine
 > [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice3.js)​
+
 ### Chapter 5
 * Carre d'un nombre
 
@@ -500,7 +516,7 @@ Minimum de deux nombres
 En supposant que la fonction JavaScript Math.min()n'existe pas, complétez le programme pour que la fonction min() renvoie le plus petit des deux nombres passés en paramètres.
 > code d'origine
 > [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice2.js)​
- ```javascript
+```javascript
 // Ajoutez votre code ici
 console.log(min(4.5, 5)); // 4.5
 console.log(min(19, 9));  // 9
