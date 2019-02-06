@@ -311,9 +311,19 @@ Complétez le programme pour convertir une tempéraure des degrés Celsius en de
 
 > C'est à Daniel Gabriel Fahrenheit que l'on doit l'invention des thermomètres en graduation Fahrenheit. Au début, ses thermomètres sont à l'alcool (1709), mais il remplace rapidement l'alcool par du mercure (1715), permettant à ses outils de mesure de fournir des données comparables. En 1742, un autre scientifique, Anders Celsius, propose une nouvelle graduation au thermomètre. La conversion entre les échelles est donnée par [°F] = [°C] x 9/5 + 32.
 
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre2_exercice2.js)
+```javascript
+// Celsius - Fahrenheit
+
+const tempCel = 37.1;
+```
+
 * Complétez le programme afin qu'il permute les valeurs des deux variables.
 
 Il existe plusieurs solutions à cet exercice. Astuce : vous n'êtes pas limité(e) à l'utilisation de deux variables.
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre2_exercice3.js)
 
 ```javascript
 let nombre1 = 5;
@@ -375,8 +385,58 @@ let secondes = 59; // faire varier cette variable entre 0 et 59
 // Ajoutez votre code ici
 
 ```
+### Chapter 4
 
-###
+* Tournez manege
+
+Complétez ce programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour :
+
+> Le manège démarre
+> C'est le tour numéro 1
+> C'est le tour numéro 2
+> ...
+> C'est le tour numéro 10
+> Le manège s'arrête
+
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice1.js)
+```javascript
+const nbTours = 10;
+
+console.log("Le manège démarre");
+
+// Ajoutez votre code ici
+
+console.log("Le manège s'arrête");
+```
+* Table de multiplication
+
+Complétez le programme pour afficher la table de multiplication du nombre choisi.
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice2.js)
+```javascript
+const nombre = 7; // Faites varier cette variable entre 1 et 10
+
+console.log(`Table de multiplication de ${nombre}`);
+// Ajoutez votre code ici
+```
+
+* FizzBuzz
+
+Ecrivez un programme qui affiche tous les nombres entre 1 et 100 avec les exceptions suivantes :
+
+> Il affiche "Fizz" à la place du nombre si celui-ci est divisible par 3.
+> Il affiche "Buzz" à la place du nombre si celui-ci est divisible par 5 et non par 3.
+> Il affiche "FizzBuzz" à la place du nombre si celui-ci est divisible à la fois par 3 et par 5.
+
+Vous pouvez utiliser l'opérateur modulo % qui renvoie le reste de la division d'un entier par un autre.
+
+Cet exercice constitue un **test d'embauche** classique qui élimine un nombre significatif de candidats. Accrochez-vous pour le réussir !
+
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice3.js)​
+
+
 
 ## Vocabulary
 Le programmeur est un créateur d'univers dont il est seul responsable.
