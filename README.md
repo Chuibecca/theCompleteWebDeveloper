@@ -58,12 +58,18 @@ git pull origin master --allow-unrelated-histories
 
 
 - [ ] [regularExpressions](https://regexone.com/)
+- [ ] [comprendreLeWeb](https://openclassrooms.com/fr/courses/1946386-comprendre-le-web)
+- [ ] [GithubOpenCLassroom](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github)
 
 
 
 ## Books
 [eloquent javascript](https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_7?ie=UTF8&qid=1548950313&sr=8-7&keywords=javascript)
+
+[eloquentOnlineVersion](http://eloquentjavascript.net/)
+
 [Secrets of the JavaScript Ninja](https://www.amazon.com/dp/1617292850/ref=sspa_dk_detail_1?psc=1)
+
 [javascriptThegoodparts](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?s=books&ie=UTF8&qid=1548950389&sr=1-1&keywords=javascript+the+good+parts)
 
 
@@ -689,9 +695,71 @@ console.log(estPalindrome("Bora-Bora")); // false
 
 ```
 ### Chapter 9
+* Classe Chien
 
+Complétez le programme en ajoutant la définition de la classe Chien afin d'obtenir le résultat d'exécution désiré.
 
+> Les chiens mesurant plus de 50 cm aboient en faisant "Grrr ! Grrr !", les autres font "Wouaf ! Wouaf !"
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre9_exercice1.js)
+
+```javascript
+// Ajoutez votre code ici
+
+const crockdur = new Chien("Crockdur", "mâtin de Naples", 75);
+// "Crockdur est un mâtin de Naples mesurant 75 cm"
+console.log(crockdur.decrire());
+// "Tiens, un chat ! Crockdur aboie : Grrr ! Grrr !"
+console.log(`Tiens, un chat ! ${crockdur.nom} aboie : ${crockdur.aboyer()}`);
+
+const milou = new Chien("Milou", "fox-terrier", 26);
+// "Milou est un fox-terrier mesurant 26 cm"
+console.log(milou.decrire());
+// "Tiens, un chat ! Milou aboie : Wouaf ! Wouaf !"
+console.log(`Tiens, un chat ! ${milou.nom} aboie : ${milou.aboyer()}`);
+
+```
+* Inventaire des personnages
+
+Complétez ce programme issu du cours pour y ajouter la gestion de l'inventaire des personnages. Voici les améliorations à intégrer :
+
+* L'inventaire d'un personnage se compose d'un nombre de pièces d'or et d'un nombre de clés.
+* Tous les personnages possèdent initialement 10 pièces d'or et une clé.
+* L'inventaire doit être affiché dans la description d'un joueur.
+* Lorsqu'un personnage tue un adversaire, il récupère dans son propre inventaire le nombre de pièces d'or et de clés de cet adversaire.
+
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre9_exercice2.js)
+
+```javascript
+// Ajoutez votre code ici
 ​
+// "Aurora a 150 points de vie, 25 en force et 0 points d'expérience, 10 pièces d'or et 1 clé(s)"
+const aurora = new Personnage("Aurora", 150, 25);
+​
+console.log(aurora.decrire());
+​
+const monstre = new Personnage("ZogZog", 20, 10);
+monstre.attaquer(aurora);
+aurora.attaquer(monstre); // Le monstre est tué
+​
+// "Aurora a 140 points de vie, 25 en force et 10 points d'expérience, 20 pièces d'or et 2 clé(s)"
+console.log(aurora.decrire());
+```
+​
+​* Liste de comptes bancaires
+
+Reprenons le contexte des comptes en banque issu d'un précédent exercice. Un compte bancaire sera modélisé par une classe définie comme suit :
+
+* Une propriété titulaire initialisée par le constructeur.
+* Une propriété solde valant initialement 0.
+* Une méthode crediter() ajoutant le montant passé en paramètre (éventuellement négatif) au solde du compte.
+* Une méthode decrire() renvoyant la description du compte.
+
+Ecrivez un programme qui crée 3 comptes bancaires, l'un appartenant à Alex, le deuxième à CLovis et le troisième à Marco. Stockez ces comptes dans un tableau.
+
+Ensuite, le programme crédite 1000 € et affiche la description de chacun des comptes.
+
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre9_exercice3.js)
+
 
 ## Vocabulaire
 Le programmeur est un créateur d'univers dont il est seul responsable.
