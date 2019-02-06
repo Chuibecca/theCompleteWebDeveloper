@@ -6,6 +6,7 @@
 
 - [The complete web developer](#the-complete-web-developer)
 	- [Markdown cheetsheet](#markdown-cheetsheet)
+	- [github](#github)
 	- [Vim](#vim)
 	- [online courses](#online-courses)
 	- [Books](#books)
@@ -25,6 +26,11 @@
 
 ## Markdown cheetsheet
 [link](https://en.support.wordpress.com/markdown-quick-reference/)
+
+## github
+```git
+git pull origin master --allow-unrelated-histories
+```
 
 ## Vim
 
@@ -514,6 +520,56 @@ console.log(calculer(2, "*", 0));  // 0
 console.log(calculer(12, "/", 0)); // Infinity
 
 ```
+### Chapter 6
+
+* Expérience du personnage
+
+Complétez le programme pour ajouter à l'objet aurora défini dans le cours une propriété nommée xp représentant son expérience. Sa valeur initiale est de 0.
+
+L'expérience doit apparaître dans la description du personnage.
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre6_exercice1.js)
+
+```javascript
+// Ajoutez votre code ici
+
+// "Aurora a 150 points de vie, 25 en force et 0 points d'expérience"
+console.log(aurora.decrire());
+
+console.log("Aurora apprend une nouvelle compétence");
+aurora.xp += 15;
+
+// "Aurora a 150 points de vie, 25 en force et 15 points d'expérience"
+console.log(aurora.decrire());
+```
+* Modélisation d'un chien
+
+Complétez ce programme pour ajouter la définition de l'objet chien.
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre6_exercice2.js)
+
+```javascript
+// Ajoutez votre code ici
+
+// "Crockdur est un mâtin de Naples mesurant 75 cm"
+console.log(`${chien.nom} est un ${chien.race} mesurant ${chien.taille} cm`);
+
+// "Tiens, un chat ! Crockdur aboie : Grrr ! Grrr !"
+console.log(`Tiens, un chat ! ${chien.nom} aboie : ${chien.aboyer()}`);
+
+```
+* Modélisation d'un compte bancaire
+
+Complétez ce programme pour créer un objet compte ayant les propriétés suivantes :
+
+Une propriété titulaire valant "Alex".
+Une propriété solde valant initialement 0.
+Une méthode crediter() ajoutant le montant passé en paramètre (éventuellement négatif) au solde du compte.
+Une méthode decrire() renvoyant la description du compte.
+Utilisez cet objet pour afficher sa description, le créditer de 250, puis le débiter de 80, et enfin afficher de nouveau sa description.
+
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice3.js)
+
+### Chapter 7
+
 
 ## Vocabulaire
 Le programmeur est un créateur d'univers dont il est seul responsable.
