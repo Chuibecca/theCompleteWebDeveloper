@@ -24,6 +24,7 @@
 		- [Chapter 4](#chapter-4)
 		- [Chapter 5](#chapter-5)
 
+
 ## Markdown cheetsheet
 [link](https://en.support.wordpress.com/markdown-quick-reference/)
 
@@ -466,7 +467,6 @@ Cet exercice constitue un **test d'embauche** classique qui élimine un nombre s
 > code d'origine
 > [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice3.js)​
 ### Chapter 5
-
 * Carre d'un nombre
 
 Carré d'un nombre
@@ -518,10 +518,8 @@ console.log(calculer(4, "+", 6));  // 10
 console.log(calculer(4, "-", 6));  // -2
 console.log(calculer(2, "*", 0));  // 0
 console.log(calculer(12, "/", 0)); // Infinity
-
 ```
 ### Chapter 6
-
 * Expérience du personnage
 
 Complétez le programme pour ajouter à l'objet aurora défini dans le cours une propriété nommée xp représentant son expérience. Sa valeur initiale est de 0.
@@ -567,12 +565,123 @@ Une méthode decrire() renvoyant la description du compte.
 Utilisez cet objet pour afficher sa description, le créditer de 250, puis le débiter de 80, et enfin afficher de nouveau sa description.
 
 [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice3.js)
-
 ### Chapter 7
+* Les Trois Mousquetaires
 
+Les Trois Mousquetaires
+
+Ecrivez un programme qui :
+
+* crée un tableau nommé mousquetaires contenant les noms des trois mousquetaires, Athos, Porthos et Aramis ;
+* affiche le nom de chaque mousquetaire à l'aide d'une boucle for ;
+* ajoute au tableau le mousquetaire d'Artagnan ;
+* affiche de nouveau le nom de chaque mousquetaire, cette fois à l'aide de la méthode forEach().
+* supprime Aramis du tableau ;
+* affiche le nom de chaque mousquetaire avec une boucle for-of.
+
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre7_exercice1.js)
+
+* Complétez le programme pour calculer puis afficher la somme des valeurs du tableau nombres.
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre7_exercice2.js)
+
+```javascript
+const nombres = [11, 3, 7, 2, 9, 10];
+
+// Ajoutez votre code ici
+
+```
+
+* Instructions
+
+Maximum d'un tableau
+
+Complétez le programme pour qu'il calcule et affiche ensuite la plus grande valeur présente dans le tableau.
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre7_exercice3.js)
+
+```javascript
+const valeurs = [3, 11, 7, 2, 9, 10];
+
+// Ajoutez votre code ici
+
+```
+### Chapter 8
+* Nombre de voyelles
+
+Complétez le programme en y ajoutant une fonction compterVoyelles() qui prend un mot en paramètre et renvoie son nombre de voyelles.
+
+> Une voyelle en majuscules reste une voyelle... A vous d'en tenir compte. En revanche, vous n'êtes pas obligé.e de gérer les accents.
+
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre8_exercice1.js)
+```javascript
+// Ajoutez votre code ici
+
+console.log(compterVoyelles("RadAr")); // 2
+console.log(compterVoyelles("Tic et Tac")); // 3
+console.log(compterVoyelles("Oasis Oasis Oh")); // 7
+
+```
+
+* Leet Speak
+
+Le leet speak est un système d'écriture où certains caractères sont remplacés par d'autres afin de produire un résultat différent mais visuellement proche. Il est ou était souvent utilisé dans certaines communautés hackers et gamers.
+
+Il existe de nombreuses variantes de l'alphabet leet. Je vous propose d'utiliser au minimum le suivant, que vous pourrez enrichir si vous le souhaitez.
+
+Lettre | EquivalentLeet
+-------|---------------
+a | 4
+b | 8
+e | 3
+l | 1
+o | 0
+s | 5
+
+La conversion doit fonctionner indifféremment pour une lettre minuscule ou majuscule.
+
+Complétez le programme en définissant la fonction convertirMotLeet() qui prend en paramètre un mot et renvoie son équivalent leet.
+
+Afin d'alléger le code de la fonction convertirMotLeet(), vous pouvez créez une autre fonction convertirLettreLeet() qui prend en paramètre une lettre et renvoie son équivalent leet. Cette fonction sera appelée pour chaque lettre du mot initial.
+
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre8_exercice2.js)
+```javascript
+// Ajoutez votre code ici
+
+console.log(convertirMotLeet("Hello World!")); // "H3110 W0r1d!"
+console.log(convertirMotLeet("Noob")); // "N008"
+console.log(convertirMotLeet("Hacker")); // "H4ck3r"
+```
+
+
+* Palindrome
+
+Complétez le programme pour définir la fonction estPalindrome() qui renvoie vrai ou faux selon que le mot soit un [palindrome](https://fr.wikipedia.org/wiki/Palindrome) ou non.
+
+> Il existe deux techniques pour construire le mot inversé :
+> Parcourir le mot initial lettre à lettre en ajoutant chaque lettre au début (et non à la fin) du mot inversé.
+> Parcourir le mot initial lettre à lettre, mais à l'envers (de la fin vers le début).
+
+> La vérification ne doit pas tenir compte des distinctions entre majuscules et minuscules : "RADAR" est un palindrome, "Radar" aussi.
+
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre8_exercice3.js)
+
+```javascript
+// AJoutez votre code ici
+
+console.log(estPalindrome("RadAr")); // true
+console.log(estPalindrome("KAYAk")); // true
+console.log(estPalindrome("Bora-Bora")); // false
+
+```
+### Chapter 9
+
+
+​
 
 ## Vocabulaire
 Le programmeur est un créateur d'univers dont il est seul responsable.
+
 L'eau bout a 100 degres.
+
 Depuis son invention dans les années 1950, l'informatique a révolutionné bien des domaines de notre vie quotidienne.
+
 **Depuis son apparition dans les années 1950, l'informatique a changé beaucoup de domaines de notre vie quotidienne.**
