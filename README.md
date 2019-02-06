@@ -270,8 +270,13 @@ console.log(compte.decrire());
 [Answerkey](https://github.com/oc-courses/intro-javascript)
 ### Chapter 1
 * Ecrivez un programme qui affiche votre nom, puis votre âge.
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre1_exercice1.js)
+
 * Ecrivez un programme qui calcule et affiche le résultat de l'addition, de la soustraction, de la multiplication et de la division de 6 par 3.
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre1_exercice2.js)
+
 * Observez le programme puis tentez de prévoir les valeurs affichées lors de son exécution.
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre1_exercice3.js)
 ```javascript
 // Prédiction de résultat
 
@@ -320,9 +325,61 @@ console.log(nombre1); // Doit afficher 3
 console.log(nombre2); // Doit afficher 5
 
 ```
+### Chapter 3
+* Jour suivant
+Affichez le jour suivant.
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre3_exercice1.js)
+
+```javascript
+const jourActuel = "lundi";
+let jourSuivant = "";
+// Ecrivez votre code ici
+```
+
+* Baccalauréat
+
+Complétez ce programme pour qu'il affiche le résultat du baccalauréat en fonction de la moyenne du candidat :
+
+Si elle est strictement inférieure à 10, il est recalé.
+
+Si elle est comprise entre 10 et 12, il est reçu.
+
+Si elle est supérieure ou égale à 12, il est reçu avec mention
+
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre3_exercice2.js)
+
+```javascript
+const moyenne = 11;
+// entrez votre code ici
+```
+* Heure suivante
+
+Complétez ce programme pour afficher l'heure qu'il sera dans une seconde.
+
+Attention, ce programme est moins simple qu'il en a l'air : validez votre solution en la testant avec les entrées suivantes. Vous devez obtenir les résultats indiqués.
+
+14h17m59s => 14h18m0s
+6h59m59s => 7h0m0s
+23h59m59s => 0h0m0s (minuit)
+
+> code d'origine
+> [Answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre3_exercice3.js)
+
+```javascript
+let heures = 14; // Faire varier cette variable entre 0 et 23
+let minutes = 17; // faire varier cette variable entre 0 et 59
+let secondes = 59; // faire varier cette variable entre 0 et 59
+
+// Ajoutez votre code ici
+
+```
+
+###
 
 ## Vocabulary
 Le programmeur est un créateur d'univers dont il est seul responsable.
 L'eau bout a 100 degres.
 Depuis son invention dans les années 1950, l'informatique a révolutionné bien des domaines de notre vie quotidienne.
-**Depuis son apparition dans les années 1950, l'informatique a changé beaucoup de domaines de notre vie quotidienne. **
+**Depuis son apparition dans les années 1950, l'informatique a changé beaucoup de domaines de notre vie quotidienne.**
