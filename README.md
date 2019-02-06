@@ -22,7 +22,6 @@
 		- [Chapter 3](#chapter-3)
 		- [Chapter 4](#chapter-4)
 		- [Chapter 5](#chapter-5)
-	- [Vocabulaire](#vocabulaire)
 
 ## Markdown cheetsheet
 [link](https://en.support.wordpress.com/markdown-quick-reference/)
@@ -462,7 +461,59 @@ Cet exercice constitue un **test d'embauche** classique qui élimine un nombre s
 > [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice3.js)​
 ### Chapter 5
 
+* Carre d'un nombre
 
+Carré d'un nombre
+
+Complétez le programme pour que les fonctions carre1() et carre2() calculent et renvoient le carré du nombre passé en paramètre.
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice1.js)​
+```javascript
+// Renvoie le carré de x
+function carre1(x) {
+  // Ajoutez votre code ici
+  return 0;
+}
+
+// Renvoie le carré de x
+const carre2 = x => 0; // Ajoutez votre code ici
+
+console.log(carre1(0)); // 0
+console.log(carre1(2)); // 4
+console.log(carre1(5)); // 25
+
+console.log(carre2(0)); // 0
+console.log(carre2(2)); // 4
+console.log(carre2(5)); // 25
+
+```
+* Minimum de deux nombres
+
+Minimum de deux nombres
+
+En supposant que la fonction JavaScript Math.min()n'existe pas, complétez le programme pour que la fonction min() renvoie le plus petit des deux nombres passés en paramètres.
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice2.js)​
+ ```javascript
+// Ajoutez votre code ici
+console.log(min(4.5, 5)); // 4.5
+console.log(min(19, 9));  // 9
+console.log(min(1, 1));   // 1
+```
+* Calculatrice
+
+Complétez le programme pour que la fonction calculer() gère les 4 opérations mathématiques de base : addition, soustraction, multiplication et division.
+> code d'origine
+> [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice3.js)​
+```javascript
+// Ajoutez votre code ici
+
+console.log(calculer(4, "+", 6));  // 10
+console.log(calculer(4, "-", 6));  // -2
+console.log(calculer(2, "*", 0));  // 0
+console.log(calculer(12, "/", 0)); // Infinity
+
+```
 
 ## Vocabulaire
 Le programmeur est un créateur d'univers dont il est seul responsable.
