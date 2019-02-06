@@ -3,9 +3,35 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ----
+
+- [The complete web developer](#the-complete-web-developer)
+	- [Markdown cheetsheet](#markdown-cheetsheet)
+	- [Vim](#vim)
+	- [online courses](#online-courses)
+	- [Books](#books)
+	- [Bases](#bases)
+	- [Some routines](#some-routines)
+	- [Difference between let and var (ECMAScript 6 2015)](#difference-between-let-and-var-ecmascript-6-2015)
+	- [template literal +](#template-literal)
+	- [Type conversion](#type-conversion)
+	- [if](#if)
+	- [function vs procedure vs methode](#function-vs-procedure-vs-methode)
+	- [Exercices](#exercices)
+		- [Chapter 1](#chapter-1)
+		- [Chapter 2](#chapter-2)
+		- [Chapter 3](#chapter-3)
+		- [Chapter 4](#chapter-4)
+		- [Chapter 5](#chapter-5)
+	- [Vocabulaire](#vocabulaire)
+
 ## Markdown cheetsheet
 [link](https://en.support.wordpress.com/markdown-quick-reference/)
 
+## Vim
+
+<kbd>zz</kbd> make text center
+: zt zb = top bottom
+<kbd>13gg</kbd> go to 13rd line
 ## online courses
 - [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
 
@@ -386,7 +412,6 @@ let secondes = 59; // faire varier cette variable entre 0 et 59
 
 ```
 ### Chapter 4
-
 * Tournez manege
 
 Complétez ce programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour :
@@ -435,10 +460,11 @@ Cet exercice constitue un **test d'embauche** classique qui élimine un nombre s
 
 > code d'origine
 > [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice3.js)​
+### Chapter 5
 
 
 
-## Vocabulary
+## Vocabulaire
 Le programmeur est un créateur d'univers dont il est seul responsable.
 L'eau bout a 100 degres.
 Depuis son invention dans les années 1950, l'informatique a révolutionné bien des domaines de notre vie quotidienne.
