@@ -416,12 +416,12 @@ let secondes = 59; // faire varier cette variable entre 0 et 59
 
 Complétez ce programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour :
 
-> Le manège démarre
-> C'est le tour numéro 1
-> C'est le tour numéro 2
-> ...
-> C'est le tour numéro 10
-> Le manège s'arrête
+  Le manège démarre
+  C'est le tour numéro 1
+  C'est le tour numéro 2
+  ...
+  C'est le tour numéro 10
+  Le manège s'arrête
 
 > code d'origine
 > [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice1.js)
