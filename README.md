@@ -39,8 +39,10 @@ git pull origin master --allow-unrelated-histories
 
 ## Vim
 
+[substitute](http://vim.wikia.com/wiki/Search_and_replace)
+
 :%s/foo/bar/g
- :  Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
+:  Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
 
 :s/foo/bar/g
 :  Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
@@ -49,10 +51,10 @@ git pull origin master --allow-unrelated-histories
 :  Change each 'foo' to 'bar', but ask for confirmation first.
 
 :%s/\<foo\>/bar/gc
-:	"Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
+:  "Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
 
 zz
-: make text center, zt zb = top and bottom
+:  make text center, zt zb = top and bottom
 
 13gg
 :  go to 13th line
