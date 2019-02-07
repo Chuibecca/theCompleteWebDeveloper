@@ -39,9 +39,23 @@ git pull origin master --allow-unrelated-histories
 
 ## Vim
 
-<kbd>zz</kbd> make text center
-: zt zb = top bottom
-<kbd>13gg</kbd> go to 13rd line
+:%s/foo/bar/g
+ :  Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
+
+:s/foo/bar/g
+:  Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
+
+:%s/foo/bar/gc
+:  Change each 'foo' to 'bar', but ask for confirmation first.
+
+:%s/\<foo\>/bar/gc
+:	"Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
+
+zz
+: make text center, zt zb = top and bottom
+
+13gg
+:  go to 13th line
 
 ## online courses
 - [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
