@@ -59,10 +59,6 @@ zz
 13gg
 :  go to 13th line
 
-WordPress
-:  A semantic personal publishing platform
-
-
 ## online courses
 - [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
 
