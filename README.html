@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="the-complete-web-developer">The complete web developer</h1>
+<p><a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a></p>
+<hr>
+<ul>
+<li><a href="#the-complete-web-developer">The complete web developer</a>
+<ul>
+<li><a href="#markdown-cheetsheet">Markdown cheetsheet</a></li>
+<li><a href="#github">github</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#online-courses">online courses</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#bases">Bases</a></li>
+<li><a href="#some-routines">Some routines</a></li>
+<li><a href="#difference-between-let-and-var-ecmascript-6-2015">Difference between let and var (ECMAScript 6 2015)</a></li>
+<li><a href="#template-literal">template literal +</a></li>
+<li><a href="#type-conversion">Type conversion</a></li>
+<li><a href="#if">if</a></li>
+<li><a href="#function-vs-procedure-vs-methode">function vs procedure vs methode</a></li>
+<li><a href="#exercices">Exercices</a>
+<ul>
+<li><a href="#chapter-1">Chapter 1</a></li>
+<li><a href="#chapter-2">Chapter 2</a></li>
+<li><a href="#chapter-3">Chapter 3</a></li>
+<li><a href="#chapter-4">Chapter 4</a></li>
+<li><a href="#chapter-5">Chapter 5</a></li>
+<li><a href="#chapter-6">Chapter 6</a></li>
+<li><a href="#chapter-7">Chapter 7</a></li>
+<li><a href="#chapter-8">Chapter 8</a></li>
+<li><a href="#chapter-9">Chapter 9</a></li>
+</ul>
+</li>
+<li><a href="#vocabulaire">Vocabulaire</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="markdown-cheetsheet">Markdown cheetsheet</h2>
+<p><a href="https://en.support.wordpress.com/markdown-quick-reference/">link</a></p>
+<h2 id="github">github</h2>
+<pre class="hljs"><code><div>git pull origin master --allow-unrelated-histories
+</div></code></pre>
+<h2 id="vim">Vim</h2>
+<p><a href="http://vim.wikia.com/wiki/Search_and_replace">substitute</a></p>
+<p>:%s/foo/bar/g
+:  Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.</p>
+<p><img class="emoji" alt="unamused" src="data:image/png;base64,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" />/foo/bar/g
+:  Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.</p>
+<p>:%s/foo/bar/gc
+:  Change each 'foo' to 'bar', but ask for confirmation first.</p>
+<p>:%s/&lt;foo&gt;/bar/gc
+:  &quot;Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.</p>
+<p>zz
+:  make text center, zt zb = top and bottom</p>
+<p>13gg
+:  go to 13th line</p>
+<p>WordPress
+:  A semantic personal publishing platform</p>
+<h2 id="online-courses">online courses</h2>
+<ul>
+<li>
+<p><input type="checkbox" id="checkbox0"><label for="checkbox0"></label><a href="https://www.udemy.com/the-complete-javascript-course/">javascriptCourseComplete</a></p>
+</li>
+<li>
+<p><input type="checkbox" id="checkbox1"><label for="checkbox1"></label><a href="https://www.udemy.com/the-complete-web-developer-zero-to-mastery/">webDevlopperFromZerotoMastery</a></p>
+</li>
+<li>
+<p><input type="checkbox" id="checkbox2"><label for="checkbox2"></label><a href="https://www.udemy.com/the-web-developer-bootcamp/">webDevBootcamp</a></p>
+</li>
+<li>
+<p><input type="checkbox" id="checkbox3"><label for="checkbox3"></label><a href="https://www.udemy.com/react-redux/">modernReactWithRedux</a></p>
+</li>
+<li>
+<p><input type="checkbox" id="checkbox4"><label for="checkbox4"></label><a href="https://www.udemy.com/understand-javascript/">javascriptTheWeirdParts</a></p>
+</li>
+<li>
+<p><input type="checkbox" id="checkbox5"><label for="checkbox5"></label><a href="https://github.com/oc-courses/intro-javascript">thejsWayAnswer</a> <a href="https://github.com/bpesquet/thejsway">thejsWayEnglish</a> <a href="https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published">thejsWayFrench</a></p>
+</li>
+<li>
+<p><input type="checkbox" id="checkbox6"><label for="checkbox6"></label><a href="https://regexone.com/">regularExpressions</a></p>
+</li>
+<li>
+<p><input type="checkbox" id="checkbox7"><label for="checkbox7"></label><a href="https://openclassrooms.com/fr/courses/1946386-comprendre-le-web">comprendreLeWeb</a></p>
+</li>
+<li>
+<p><input type="checkbox" id="checkbox8"><label for="checkbox8"></label><a href="https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github">GithubOpenCLassroom</a></p>
+</li>
+</ul>
+<h2 id="books">Books</h2>
+<p><a href="https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_7?ie=UTF8&amp;qid=1548950313&amp;sr=8-7&amp;keywords=javascript">eloquent javascript</a></p>
+<p><a href="http://eloquentjavascript.net/">eloquentOnlineVersion</a></p>
+<p><a href="https://www.amazon.com/dp/1617292850/ref=sspa_dk_detail_1?psc=1">Secrets of the JavaScript Ninja</a></p>
+<p><a href="https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1548950389&amp;sr=1-1&amp;keywords=javascript+the+good+parts">javascriptThegoodparts</a></p>
+<h2 id="bases">Bases</h2>
+<p>Un programme informatique (également appelé application ou logiciel) est une liste d'ordres indiquant à un ordinateur ce qu'il doit faire.</p>
+<p>ce sont les ordres données à la machine, qu'on appelle également des instructions. L'ensemble des fichiers contenant les instructions du programme constitue son code source. Programmer, c'est donc écrire le code source d'un programme, d'où l'emploi du terme coder.</p>
+<p>Un langage de programmation définit une manière de donner des ordres à un ordinateur. Un peu comme une langue vivante, tout langage a son vocabulaire (un ensemble de mots-clés, chacun jouant un rôle spécifique) et sa grammaire (un ensemble de règles définissant la manière d'écrire des programmes dans ce langage).</p>
+<p>Le seul langage de programmation directement compréhensible par un ordinateur est le langage machine, également appelé assembleur. Il s'agit d'instructions élémentaires liées à un type de processeur (le &quot;cerveau&quot; de l'ordinateur) et qui permettent de manipuler directement la mémoire de la machine(x86=32位处理器).</p>
+<p><img src="img/2019-02-06-10-58-07.png" alt=""></p>
+<ul>
+<li>
+<p>On nomme exécution le fait de demander à un ordinateur de réaliser les ordres contenus dans un programme.</p>
+</li>
+<li>
+<p>Avec certains langages, les lignes du code source sont traduites en assembleur puis exécutées ligne après ligne par un programme spécifique appelé interpréteur. On dit alors que le langage est interprété. Python et PHP sont des exemples de langages interprétés.</p>
+</li>
+<li>
+<p>Une autre possibilité consiste à créer à partir de l'ensemble du code source un fichier directement exécutable (sous Windows, il portera l'extension .exe) en utilisant un programme intermédiaire appelé compilateur. On parle alors de langage compilé. Les langages C et C++ sont des exemples de langages compilés.</p>
+</li>
+<li>
+<p>Enfin, une troisième option consiste à utiliser un pseudo-compilateur pour générer à partir du code
+source un ensemble de fichiers pouvant être exécutés sur n'importe quelle plate-forme supportant
+l'environnement. C'est le cas du langage Java et des langages de la plate-forme Microsoft .NET
+(VB.NET, C#, etc).</p>
+</li>
+</ul>
+<h2 id="some-routines">Some routines</h2>
+<pre class="hljs"><code><div><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello from JavaScript!"</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello from JavaScript!"</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Let's do some math"</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-number">4</span> + <span class="hljs-number">7</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-number">12</span> / <span class="hljs-number">0</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Goodbye!"</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello from JavaScript!"</span>);
+<span class="hljs-comment">// console.log("Let's do some math");</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-number">4</span> + <span class="hljs-number">7</span>);
+<span class="hljs-comment">// console.log(12 / 0);</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Goodbye!"</span>);
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> a;
+<span class="hljs-built_in">console</span>.log(a);  <span class="hljs-comment">// undefined</span>
+</div></code></pre>
+<h2 id="difference-between-let-and-var-ecmascript-6-2015">Difference between let and var (ECMAScript 6 2015)</h2>
+<pre class="hljs"><code><div><span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-comment">// Here x is 10</span>
+{
+  <span class="hljs-keyword">var</span> x = <span class="hljs-number">2</span>;
+  <span class="hljs-comment">// Here x is 2</span>
+}
+<span class="hljs-comment">// Here x is 2</span>
+
+<span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-comment">// Here x is 10</span>
+{
+  <span class="hljs-keyword">let</span> x = <span class="hljs-number">2</span>;
+  <span class="hljs-comment">// Here x is 2</span>
+}
+<span class="hljs-comment">// Here x is 10</span>
+
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> num1 = <span class="hljs-number">0</span>;
+{
+  num1 = <span class="hljs-number">1</span>; <span class="hljs-comment">// OK : num1 is declared in the parent block</span>
+  <span class="hljs-keyword">const</span> num2 = <span class="hljs-number">0</span>;
+}
+<span class="hljs-built_in">console</span>.log(num1); <span class="hljs-comment">// OK : num1 is declared in the current block</span>
+<span class="hljs-built_in">console</span>.log(num2); <span class="hljs-comment">// Error! num2 is not visible here</span>
+</div></code></pre>
+<h2 id="template-literal">template literal +</h2>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> country = <span class="hljs-string">"France"</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`I live in <span class="hljs-subst">${country}</span>`</span>); <span class="hljs-comment">// Show "I live in France"</span>
+<span class="hljs-keyword">const</span> x = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">const</span> y = <span class="hljs-number">7</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${x}</span> + <span class="hljs-subst">${y}</span> = <span class="hljs-subst">${x + y}</span>`</span>); <span class="hljs-comment">// Show "3 + 7 = 10"</span>
+</div></code></pre>
+<h2 id="type-conversion">Type conversion</h2>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> g = <span class="hljs-string">"five"</span> * <span class="hljs-number">2</span>;
+<span class="hljs-built_in">console</span>.log(g); <span class="hljs-comment">// Show NaN</span>
+<span class="hljs-keyword">const</span> h = <span class="hljs-string">"5"</span>;
+<span class="hljs-built_in">console</span>.log(h + <span class="hljs-number">1</span>); <span class="hljs-comment">// Concatenation: show the string "51"</span>
+<span class="hljs-keyword">const</span> number = <span class="hljs-built_in">Number</span>(<span class="hljs-string">"5"</span>);
+<span class="hljs-keyword">const</span> string = <span class="hljs-built_in">String</span>(<span class="hljs-string">"6"</span>);
+<span class="hljs-built_in">console</span>.log(i + <span class="hljs-number">1</span>); <span class="hljs-comment">// Numerical addition: show the number 6</span>
+<span class="hljs-keyword">const</span> f = <span class="hljs-number">100</span>;
+<span class="hljs-comment">// Show "Variable f contains the value 100"</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Variable f contains the value "</span> + f);
+<span class="hljs-keyword">const</span> name = prompt(<span class="hljs-string">"Enter your first name:"</span>);
+alert(<span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>`</span>);
+<span class="hljs-keyword">const</span> temp1 = <span class="hljs-number">36.9</span>;
+<span class="hljs-keyword">const</span> temp2 = <span class="hljs-number">37.6</span>;
+<span class="hljs-keyword">const</span> temp3 = <span class="hljs-number">37.1</span>;
+<span class="hljs-built_in">console</span>.log(temp1, temp2, temp3); <span class="hljs-comment">// Show "36.9 37.6 37.1"</span>
+</div></code></pre>
+<h2 id="if">if</h2>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> nombre = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">if</span> (nombre &gt; <span class="hljs-number">0</span>) {
+  <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est positif"</span>);
+}
+<span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est négatif ou nul"</span>);
+}
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> nombre = <span class="hljs-number">-3</span>;
+<span class="hljs-keyword">if</span> (nombre &gt; <span class="hljs-number">0</span>) {
+  <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est positif"</span>);
+} <span class="hljs-keyword">else</span> { <span class="hljs-comment">// nombre &lt;= 0</span>
+  <span class="hljs-keyword">if</span> (nombre &lt; <span class="hljs-number">0</span>) {
+    <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est négatif"</span>);
+  } <span class="hljs-keyword">else</span> { <span class="hljs-comment">// nombre === 0</span>
+    <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est nul"</span>);
+  }
+}
+<span class="hljs-keyword">if</span> (nombre &gt; <span class="hljs-number">0</span>) {
+  <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est positif"</span>);
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (nombre &lt; <span class="hljs-number">0</span>) {
+  <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est négatif"</span>);
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est nul"</span>);
+}
+
+<span class="hljs-keyword">if</span> ((nombre &gt;= <span class="hljs-number">0</span>) &amp;&amp; (nombre &lt;= <span class="hljs-number">100</span>)) {
+  <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est compris entre 0 et 100"</span>);
+}
+<span class="hljs-keyword">if</span> ((nombre &lt; <span class="hljs-number">0</span>) || (nombre &gt; <span class="hljs-number">100</span>)) {
+  <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est en dehors de l'intervalle [0, 100]"</span>);
+}
+<span class="hljs-keyword">if</span> (!(nombre &gt; <span class="hljs-number">100</span>)) {
+  <span class="hljs-built_in">console</span>.log(nombre + <span class="hljs-string">" est inférieur ou égal à 100"</span>);
+}
+
+<span class="hljs-keyword">const</span> meteo = prompt(<span class="hljs-string">"what's the weather outside"</span>);
+<span class="hljs-keyword">switch</span> (meteo) {
+  <span class="hljs-keyword">case</span> <span class="hljs-string">"soleil"</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Sortez en t-shirt."</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">"vent"</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Sortez en pull."</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">"pluie"</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Sortez en blouson."</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-string">"neige"</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Restez au chaud à la maison."</span>);
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">default</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Je n'ai pas compris !"</span>);
+}
+
+<span class="hljs-keyword">const</span> x = <span class="hljs-string">"abc"</span>;
+<span class="hljs-keyword">switch</span> (x) {
+  <span class="hljs-keyword">case</span> <span class="hljs-string">"abc"</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"x vaut abc"</span>);
+    <span class="hljs-comment">// pas de break : on passe au bloc suivant !</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-string">"def"</span>:
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"x vaut def"</span>);
+    <span class="hljs-keyword">break</span>;
+}
+
+</div></code></pre>
+<h2 id="function-vs-procedure-vs-methode">function vs procedure vs methode</h2>
+<p>Une fonction qui ne renvoie pas de valeur est parfois appelée une procédure.</p>
+<pre class="hljs"><code><div><span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.min(<span class="hljs-number">4.5</span>, <span class="hljs-number">5</span>)); <span class="hljs-comment">// 4.5</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.min(<span class="hljs-number">19</span>, <span class="hljs-number">9</span>));  <span class="hljs-comment">// 9</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.min(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>));   <span class="hljs-comment">// 1</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.random()); <span class="hljs-comment">// Un nombre aléatoire entre 0 et 1</span>
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> stylo = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">"bille"</span>,
+  <span class="hljs-attr">couleur</span>: <span class="hljs-string">"bleu"</span>,
+  <span class="hljs-attr">marque</span>: <span class="hljs-string">"Bic"</span>
+};
+
+stylo.couleur = <span class="hljs-string">"red"</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`J'écris avec un stylo <span class="hljs-subst">${stylo.type}</span> <span class="hljs-subst">${stylo.couleur}</span> de marque <span class="hljs-subst">${stylo.marque}</span>`</span>);
+
+stylo.prix = <span class="hljs-string">"3"</span>;
+<span class="hljs-comment">// "Mon stylo coûte 2.5 euros"</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Mon stylo coûte <span class="hljs-subst">${stylo.prix}</span> euros`</span>);
+
+<span class="hljs-keyword">const</span> aurora = {
+  <span class="hljs-attr">nom</span>: <span class="hljs-string">"Aurora"</span>,
+  <span class="hljs-attr">sante</span>: <span class="hljs-number">150</span>,
+  <span class="hljs-attr">force</span>: <span class="hljs-number">25</span>
+};
+
+<span class="hljs-comment">// "Aurora a 150 points de vie et 25 en force"</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${aurora.nom}</span> a <span class="hljs-subst">${aurora.sante}</span> points de vie et <span class="hljs-subst">${aurora.force}</span> en force`</span>);
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Aurora est blessée par une flèche"</span>);
+aurora.sante = aurora.sante - <span class="hljs-number">20</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Aurora trouve un bracelet de force"</span>);
+aurora.force = aurora.force + <span class="hljs-number">10</span>;
+
+<span class="hljs-comment">// "Aurora a 130 points de vie et 35 en force"</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${aurora.nom}</span> a <span class="hljs-subst">${aurora.sante}</span> points de vie et <span class="hljs-subst">${aurora.force}</span> en force`</span>);
+
+<span class="hljs-comment">// Modélisation d'un compte bancaire</span>
+
+<span class="hljs-keyword">const</span> compte = {
+  <span class="hljs-attr">titulaire</span>: <span class="hljs-string">"Alex"</span>,
+  <span class="hljs-attr">solde</span>: <span class="hljs-number">0</span>,
+
+  <span class="hljs-comment">// Ajoute un montant au solde</span>
+  crediter(montant) {
+    <span class="hljs-keyword">this</span>.solde += montant;
+  },
+
+  <span class="hljs-comment">// Renvoie la description du compte</span>
+  decrire() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`titulaire: <span class="hljs-subst">${<span class="hljs-keyword">this</span>.titulaire}</span>, solde: <span class="hljs-subst">${<span class="hljs-keyword">this</span>.solde}</span>`</span>;
+  }
+};
+
+<span class="hljs-comment">// "titulaire: Alex, solde: 0"</span>
+<span class="hljs-built_in">console</span>.log(compte.decrire());
+
+compte.crediter(<span class="hljs-number">250</span>);
+compte.crediter(<span class="hljs-number">-80</span>);
+
+<span class="hljs-comment">// "titulaire: Alex, solde: 170"</span>
+<span class="hljs-built_in">console</span>.log(compte.decrire());
+</div></code></pre>
+<h2 id="exercices">Exercices</h2>
+<p><a href="https://github.com/oc-courses/intro-javascript">Answerkey</a></p>
+<h3 id="chapter-1">Chapter 1</h3>
+<ul>
+<li>
+<p>Ecrivez un programme qui affiche votre nom, puis votre âge.
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre1_exercice1.js">answer</a></p>
+</li>
+<li>
+<p>Ecrivez un programme qui calcule et affiche le résultat de l'addition, de la soustraction, de la multiplication et de la division de 6 par 3.
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre1_exercice2.js">answer</a></p>
+</li>
+<li>
+<p>Observez le programme puis tentez de prévoir les valeurs affichées lors de son exécution.
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre1_exercice3.js">answer</a></p>
+</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-comment">// Prédiction de résultat</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-number">4</span> + <span class="hljs-number">5</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"4 + 5"</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"4"</span> + <span class="hljs-string">"5"</span>);
+</div></code></pre>
+<p>Vérifiez vos prévisions en l'exécutant.</p>
+<h3 id="chapter-2">Chapter 2</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Mots_r%C3%A9serv%C3%A9s">liste des mots reserves dans javascript</a></li>
+<li>Prediction des valeurs</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-comment">// Prédiction de valeurs</span>
+
+<span class="hljs-keyword">let</span> a = <span class="hljs-number">2</span>;
+a -= <span class="hljs-number">1</span>;
+a++;
+<span class="hljs-keyword">let</span> b = <span class="hljs-number">8</span>;
+b += <span class="hljs-number">2</span>;
+<span class="hljs-keyword">const</span> c = a + b * b;
+<span class="hljs-keyword">const</span> d = a * b + b;
+<span class="hljs-keyword">const</span> e = a * (b + b);
+<span class="hljs-keyword">const</span> f = a * b / a;
+<span class="hljs-keyword">const</span> g = b / a * a;
+
+</div></code></pre>
+<ul>
+<li>Convert from Celsius to Fahrenheit</li>
+</ul>
+<p>Complétez le programme pour convertir une tempéraure des degrés Celsius en degrés Fahrenheit.</p>
+<blockquote>
+<p>C'est à Daniel Gabriel Fahrenheit que l'on doit l'invention des thermomètres en graduation Fahrenheit. Au début, ses thermomètres sont à l'alcool (1709), mais il remplace rapidement l'alcool par du mercure (1715), permettant à ses outils de mesure de fournir des données comparables. En 1742, un autre scientifique, Anders Celsius, propose une nouvelle graduation au thermomètre. La conversion entre les échelles est donnée par [°F] = [°C] x 9/5 + 32.</p>
+</blockquote>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre2_exercice2.js">answer</a></p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-comment">// Celsius - Fahrenheit</span>
+
+<span class="hljs-keyword">const</span> tempCel = <span class="hljs-number">37.1</span>;
+</div></code></pre>
+<ul>
+<li>Complétez le programme afin qu'il permute les valeurs des deux variables.</li>
+</ul>
+<p>Il existe plusieurs solutions à cet exercice. Astuce : vous n'êtes pas limité(e) à l'utilisation de deux variables.</p>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre2_exercice3.js">answer</a></p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> nombre1 = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">let</span> nombre2 = <span class="hljs-number">3</span>;
+
+<span class="hljs-comment">// Tapez votre code ici (sans rien modifier d'autre !)</span>
+
+<span class="hljs-built_in">console</span>.log(nombre1); <span class="hljs-comment">// Doit afficher 3</span>
+<span class="hljs-built_in">console</span>.log(nombre2); <span class="hljs-comment">// Doit afficher 5</span>
+
+</div></code></pre>
+<h3 id="chapter-3">Chapter 3</h3>
+<ul>
+<li>Jour suivant</li>
+</ul>
+<p>Affichez le jour suivant.</p>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre3_exercice1.js">answer</a></p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> jourActuel = <span class="hljs-string">"lundi"</span>;
+<span class="hljs-keyword">let</span> jourSuivant = <span class="hljs-string">""</span>;
+<span class="hljs-comment">// Ecrivez votre code ici</span>
+</div></code></pre>
+<ul>
+<li>Baccalauréat</li>
+</ul>
+<p>Complétez ce programme pour qu'il affiche le résultat du baccalauréat en fonction de la moyenne du candidat :</p>
+<p>Si elle est strictement inférieure à 10, il est recalé.</p>
+<p>Si elle est comprise entre 10 et 12, il est reçu.</p>
+<p>Si elle est supérieure ou égale à 12, il est reçu avec mention</p>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre3_exercice2.js">answer</a></p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> moyenne = <span class="hljs-number">11</span>;
+<span class="hljs-comment">// entrez votre code ici</span>
+</div></code></pre>
+<ul>
+<li>Heure suivante</li>
+</ul>
+<p>Complétez ce programme pour afficher l'heure qu'il sera dans une seconde.</p>
+<p>Attention, ce programme est moins simple qu'il en a l'air : validez votre solution en la testant avec les entrées suivantes. Vous devez obtenir les résultats indiqués.</p>
+<p>14h17m59s =&gt; 14h18m0s
+6h59m59s =&gt; 7h0m0s
+23h59m59s =&gt; 0h0m0s (minuit)</p>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre3_exercice3.js">Answer</a></p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-keyword">let</span> heures = <span class="hljs-number">14</span>; <span class="hljs-comment">// Faire varier cette variable entre 0 et 23</span>
+<span class="hljs-keyword">let</span> minutes = <span class="hljs-number">17</span>; <span class="hljs-comment">// faire varier cette variable entre 0 et 59</span>
+<span class="hljs-keyword">let</span> secondes = <span class="hljs-number">59</span>; <span class="hljs-comment">// faire varier cette variable entre 0 et 59</span>
+
+<span class="hljs-comment">// Ajoutez votre code ici</span>
+
+</div></code></pre>
+<h3 id="chapter-4">Chapter 4</h3>
+<ul>
+<li>Tournez manege</li>
+</ul>
+<p>Complétez ce programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour :</p>
+<pre><code>Le manège démarre
+C'est le tour numéro 1
+C'est le tour numéro 2
+...
+C'est le tour numéro 10
+Le manège s'arrête
+</code></pre>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice1.js">answer</a></p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> nbTours = <span class="hljs-number">10</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Le manège démarre"</span>);
+
+<span class="hljs-comment">// Ajoutez votre code ici</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Le manège s'arrête"</span>);
+</div></code></pre>
+<ul>
+<li>Table de multiplication</li>
+</ul>
+<p>Complétez le programme pour afficher la table de multiplication du nombre choisi.</p>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice2.js">answer</a></p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> nombre = <span class="hljs-number">7</span>; <span class="hljs-comment">// Faites varier cette variable entre 1 et 10</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Table de multiplication de <span class="hljs-subst">${nombre}</span>`</span>);
+<span class="hljs-comment">// Ajoutez votre code ici</span>
+</div></code></pre>
+<ul>
+<li>FizzBuzz</li>
+</ul>
+<p>Ecrivez un programme qui affiche tous les nombres entre 1 et 100 avec les exceptions suivantes :</p>
+<blockquote>
+<p>Il affiche &quot;Fizz&quot; à la place du nombre si celui-ci est divisible par 3.
+Il affiche &quot;Buzz&quot; à la place du nombre si celui-ci est divisible par 5 et non par 3.
+Il affiche &quot;FizzBuzz&quot; à la place du nombre si celui-ci est divisible à la fois par 3 et par 5.</p>
+</blockquote>
+<p>Vous pouvez utiliser l'opérateur modulo % qui renvoie le reste de la division d'un entier par un autre.</p>
+<p>Cet exercice constitue un <strong>test d'embauche</strong> classique qui élimine un nombre significatif de candidats. Accrochez-vous pour le réussir !</p>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre4_exercice3.js">answer</a>​</p>
+</blockquote>
+<h3 id="chapter-5">Chapter 5</h3>
+<ul>
+<li>Carre d'un nombre</li>
+</ul>
+<p>Carré d'un nombre</p>
+<p>Complétez le programme pour que les fonctions carre1() et carre2() calculent et renvoient le carré du nombre passé en paramètre.</p>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice1.js">answer</a>​</p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-comment">// Renvoie le carré de x</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">carre1</span>(<span class="hljs-params">x</span>) </span>{
+  <span class="hljs-comment">// Ajoutez votre code ici</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">// Renvoie le carré de x</span>
+<span class="hljs-keyword">const</span> carre2 = <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> <span class="hljs-number">0</span>; <span class="hljs-comment">// Ajoutez votre code ici</span>
+
+<span class="hljs-built_in">console</span>.log(carre1(<span class="hljs-number">0</span>)); <span class="hljs-comment">// 0</span>
+<span class="hljs-built_in">console</span>.log(carre1(<span class="hljs-number">2</span>)); <span class="hljs-comment">// 4</span>
+<span class="hljs-built_in">console</span>.log(carre1(<span class="hljs-number">5</span>)); <span class="hljs-comment">// 25</span>
+
+<span class="hljs-built_in">console</span>.log(carre2(<span class="hljs-number">0</span>)); <span class="hljs-comment">// 0</span>
+<span class="hljs-built_in">console</span>.log(carre2(<span class="hljs-number">2</span>)); <span class="hljs-comment">// 4</span>
+<span class="hljs-built_in">console</span>.log(carre2(<span class="hljs-number">5</span>)); <span class="hljs-comment">// 25</span>
+
+</div></code></pre>
+<ul>
+<li>Minimum de deux nombres</li>
+</ul>
+<p>Minimum de deux nombres</p>
+<p>En supposant que la fonction JavaScript Math.min()n'existe pas, complétez le programme pour que la fonction min() renvoie le plus petit des deux nombres passés en paramètres.</p>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice2.js">answer</a>​</p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-comment">// Ajoutez votre code ici</span>
+<span class="hljs-built_in">console</span>.log(min(<span class="hljs-number">4.5</span>, <span class="hljs-number">5</span>)); <span class="hljs-comment">// 4.5</span>
+<span class="hljs-built_in">console</span>.log(min(<span class="hljs-number">19</span>, <span class="hljs-number">9</span>));  <span class="hljs-comment">// 9</span>
+<span class="hljs-built_in">console</span>.log(min(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>));   <span class="hljs-comment">// 1</span>
+</div></code></pre>
+<ul>
+<li>Calculatrice</li>
+</ul>
+<p>Complétez le programme pour que la fonction calculer() gère les 4 opérations mathématiques de base : addition, soustraction, multiplication et division.</p>
+<blockquote>
+<p>code d'origine
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice3.js">answer</a>​</p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-comment">// Ajoutez votre code ici</span>
+
+<span class="hljs-built_in">console</span>.log(calculer(<span class="hljs-number">4</span>, <span class="hljs-string">"+"</span>, <span class="hljs-number">6</span>));  <span class="hljs-comment">// 10</span>
+<span class="hljs-built_in">console</span>.log(calculer(<span class="hljs-number">4</span>, <span class="hljs-string">"-"</span>, <span class="hljs-number">6</span>));  <span class="hljs-comment">// -2</span>
+<span class="hljs-built_in">console</span>.log(calculer(<span class="hljs-number">2</span>, <span class="hljs-string">"*"</span>, <span class="hljs-number">0</span>));  <span class="hljs-comment">// 0</span>
+<span class="hljs-built_in">console</span>.log(calculer(<span class="hljs-number">12</span>, <span class="hljs-string">"/"</span>, <span class="hljs-number">0</span>)); <span class="hljs-comment">// Infinity</span>
+</div></code></pre>
+<h3 id="chapter-6">Chapter 6</h3>
+<ul>
+<li>Expérience du personnage</li>
+</ul>
+<p>Complétez le programme pour ajouter à l'objet aurora défini dans le cours une propriété nommée xp représentant son expérience. Sa valeur initiale est de 0.</p>
+<p>L'expérience doit apparaître dans la description du personnage.
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre6_exercice1.js">answer</a></p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Ajoutez votre code ici</span>
+
+<span class="hljs-comment">// "Aurora a 150 points de vie, 25 en force et 0 points d'expérience"</span>
+<span class="hljs-built_in">console</span>.log(aurora.decrire());
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Aurora apprend une nouvelle compétence"</span>);
+aurora.xp += <span class="hljs-number">15</span>;
+
+<span class="hljs-comment">// "Aurora a 150 points de vie, 25 en force et 15 points d'expérience"</span>
+<span class="hljs-built_in">console</span>.log(aurora.decrire());
+</div></code></pre>
+<ul>
+<li>Modélisation d'un chien</li>
+</ul>
+<p>Complétez ce programme pour ajouter la définition de l'objet chien.
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre6_exercice2.js">answer</a></p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Ajoutez votre code ici</span>
+
+<span class="hljs-comment">// "Crockdur est un mâtin de Naples mesurant 75 cm"</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${chien.nom}</span> est un <span class="hljs-subst">${chien.race}</span> mesurant <span class="hljs-subst">${chien.taille}</span> cm`</span>);
+
+<span class="hljs-comment">// "Tiens, un chat ! Crockdur aboie : Grrr ! Grrr !"</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Tiens, un chat ! <span class="hljs-subst">${chien.nom}</span> aboie : <span class="hljs-subst">${chien.aboyer()}</span>`</span>);
+
+</div></code></pre>
+<ul>
+<li>Modélisation d'un compte bancaire</li>
+</ul>
+<p>Complétez ce programme pour créer un objet compte ayant les propriétés suivantes :</p>
+<p>Une propriété titulaire valant &quot;Alex&quot;.
+Une propriété solde valant initialement 0.
+Une méthode crediter() ajoutant le montant passé en paramètre (éventuellement négatif) au solde du compte.
+Une méthode decrire() renvoyant la description du compte.
+Utilisez cet objet pour afficher sa description, le créditer de 250, puis le débiter de 80, et enfin afficher de nouveau sa description.</p>
+<p><a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice3.js">answer</a></p>
+<h3 id="chapter-7">Chapter 7</h3>
+<ul>
+<li>Les Trois Mousquetaires</li>
+</ul>
+<p>Les Trois Mousquetaires</p>
+<p>Ecrivez un programme qui :</p>
+<ul>
+<li>crée un tableau nommé mousquetaires contenant les noms des trois mousquetaires, Athos, Porthos et Aramis ;</li>
+<li>affiche le nom de chaque mousquetaire à l'aide d'une boucle for ;</li>
+<li>ajoute au tableau le mousquetaire d'Artagnan ;</li>
+<li>affiche de nouveau le nom de chaque mousquetaire, cette fois à l'aide de la méthode forEach().</li>
+<li>supprime Aramis du tableau ;</li>
+<li>affiche le nom de chaque mousquetaire avec une boucle for-of.</li>
+</ul>
+<p><a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre7_exercice1.js">answer</a></p>
+<ul>
+<li>Complétez le programme pour calculer puis afficher la somme des valeurs du tableau nombres.
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre7_exercice2.js">answer</a></li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> nombres = [<span class="hljs-number">11</span>, <span class="hljs-number">3</span>, <span class="hljs-number">7</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>];
+
+<span class="hljs-comment">// Ajoutez votre code ici</span>
+
+</div></code></pre>
+<ul>
+<li>Instructions</li>
+</ul>
+<p>Maximum d'un tableau</p>
+<p>Complétez le programme pour qu'il calcule et affiche ensuite la plus grande valeur présente dans le tableau.
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre7_exercice3.js">answer</a></p>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> valeurs = [<span class="hljs-number">3</span>, <span class="hljs-number">11</span>, <span class="hljs-number">7</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>];
+
+<span class="hljs-comment">// Ajoutez votre code ici</span>
+
+</div></code></pre>
+<h3 id="chapter-8">Chapter 8</h3>
+<ul>
+<li>Nombre de voyelles</li>
+</ul>
+<p>Complétez le programme en y ajoutant une fonction compterVoyelles() qui prend un mot en paramètre et renvoie son nombre de voyelles.</p>
+<blockquote>
+<p>Une voyelle en majuscules reste une voyelle... A vous d'en tenir compte. En revanche, vous n'êtes pas obligé.e de gérer les accents.</p>
+</blockquote>
+<p><a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre8_exercice1.js">answer</a></p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Ajoutez votre code ici</span>
+
+<span class="hljs-built_in">console</span>.log(compterVoyelles(<span class="hljs-string">"RadAr"</span>)); <span class="hljs-comment">// 2</span>
+<span class="hljs-built_in">console</span>.log(compterVoyelles(<span class="hljs-string">"Tic et Tac"</span>)); <span class="hljs-comment">// 3</span>
+<span class="hljs-built_in">console</span>.log(compterVoyelles(<span class="hljs-string">"Oasis Oasis Oh"</span>)); <span class="hljs-comment">// 7</span>
+
+</div></code></pre>
+<ul>
+<li>Leet Speak</li>
+</ul>
+<p>Le leet speak est un système d'écriture où certains caractères sont remplacés par d'autres afin de produire un résultat différent mais visuellement proche. Il est ou était souvent utilisé dans certaines communautés hackers et gamers.</p>
+<p>Il existe de nombreuses variantes de l'alphabet leet. Je vous propose d'utiliser au minimum le suivant, que vous pourrez enrichir si vous le souhaitez.</p>
+<table>
+<thead>
+<tr>
+<th>Lettre</th>
+<th>EquivalentLeet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>4</td>
+</tr>
+<tr>
+<td>b</td>
+<td>8</td>
+</tr>
+<tr>
+<td>e</td>
+<td>3</td>
+</tr>
+<tr>
+<td>l</td>
+<td>1</td>
+</tr>
+<tr>
+<td>o</td>
+<td>0</td>
+</tr>
+<tr>
+<td>s</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>La conversion doit fonctionner indifféremment pour une lettre minuscule ou majuscule.</p>
+<p>Complétez le programme en définissant la fonction convertirMotLeet() qui prend en paramètre un mot et renvoie son équivalent leet.</p>
+<p>Afin d'alléger le code de la fonction convertirMotLeet(), vous pouvez créez une autre fonction convertirLettreLeet() qui prend en paramètre une lettre et renvoie son équivalent leet. Cette fonction sera appelée pour chaque lettre du mot initial.</p>
+<p><a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre8_exercice2.js">answer</a></p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Ajoutez votre code ici</span>
+
+<span class="hljs-built_in">console</span>.log(convertirMotLeet(<span class="hljs-string">"Hello World!"</span>)); <span class="hljs-comment">// "H3110 W0r1d!"</span>
+<span class="hljs-built_in">console</span>.log(convertirMotLeet(<span class="hljs-string">"Noob"</span>)); <span class="hljs-comment">// "N008"</span>
+<span class="hljs-built_in">console</span>.log(convertirMotLeet(<span class="hljs-string">"Hacker"</span>)); <span class="hljs-comment">// "H4ck3r"</span>
+</div></code></pre>
+<ul>
+<li>Palindrome</li>
+</ul>
+<p>Complétez le programme pour définir la fonction estPalindrome() qui renvoie vrai ou faux selon que le mot soit un <a href="https://fr.wikipedia.org/wiki/Palindrome">palindrome</a> ou non.</p>
+<blockquote>
+<p>Il existe deux techniques pour construire le mot inversé :
+Parcourir le mot initial lettre à lettre en ajoutant chaque lettre au début (et non à la fin) du mot inversé.
+Parcourir le mot initial lettre à lettre, mais à l'envers (de la fin vers le début).</p>
+</blockquote>
+<blockquote>
+<p>La vérification ne doit pas tenir compte des distinctions entre majuscules et minuscules : &quot;RADAR&quot; est un palindrome, &quot;Radar&quot; aussi.</p>
+</blockquote>
+<p><a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre8_exercice3.js">answer</a></p>
+<pre class="hljs"><code><div><span class="hljs-comment">// AJoutez votre code ici</span>
+
+<span class="hljs-built_in">console</span>.log(estPalindrome(<span class="hljs-string">"RadAr"</span>)); <span class="hljs-comment">// true</span>
+<span class="hljs-built_in">console</span>.log(estPalindrome(<span class="hljs-string">"KAYAk"</span>)); <span class="hljs-comment">// true</span>
+<span class="hljs-built_in">console</span>.log(estPalindrome(<span class="hljs-string">"Bora-Bora"</span>)); <span class="hljs-comment">// false</span>
+
+</div></code></pre>
+<h3 id="chapter-9">Chapter 9</h3>
+<ul>
+<li>Classe Chien</li>
+</ul>
+<p>Complétez le programme en ajoutant la définition de la classe Chien afin d'obtenir le résultat d'exécution désiré.</p>
+<blockquote>
+<p>Les chiens mesurant plus de 50 cm aboient en faisant &quot;Grrr ! Grrr !&quot;, les autres font &quot;Wouaf ! Wouaf !&quot;
+<a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre9_exercice1.js">answer</a></p>
+</blockquote>
+<pre class="hljs"><code><div><span class="hljs-comment">// Ajoutez votre code ici</span>
+
+<span class="hljs-keyword">const</span> crockdur = <span class="hljs-keyword">new</span> Chien(<span class="hljs-string">"Crockdur"</span>, <span class="hljs-string">"mâtin de Naples"</span>, <span class="hljs-number">75</span>);
+<span class="hljs-comment">// "Crockdur est un mâtin de Naples mesurant 75 cm"</span>
+<span class="hljs-built_in">console</span>.log(crockdur.decrire());
+<span class="hljs-comment">// "Tiens, un chat ! Crockdur aboie : Grrr ! Grrr !"</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Tiens, un chat ! <span class="hljs-subst">${crockdur.nom}</span> aboie : <span class="hljs-subst">${crockdur.aboyer()}</span>`</span>);
+
+<span class="hljs-keyword">const</span> milou = <span class="hljs-keyword">new</span> Chien(<span class="hljs-string">"Milou"</span>, <span class="hljs-string">"fox-terrier"</span>, <span class="hljs-number">26</span>);
+<span class="hljs-comment">// "Milou est un fox-terrier mesurant 26 cm"</span>
+<span class="hljs-built_in">console</span>.log(milou.decrire());
+<span class="hljs-comment">// "Tiens, un chat ! Milou aboie : Wouaf ! Wouaf !"</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Tiens, un chat ! <span class="hljs-subst">${milou.nom}</span> aboie : <span class="hljs-subst">${milou.aboyer()}</span>`</span>);
+
+</div></code></pre>
+<ul>
+<li>Inventaire des personnages</li>
+</ul>
+<p>Complétez ce programme issu du cours pour y ajouter la gestion de l'inventaire des personnages. Voici les améliorations à intégrer :</p>
+<ul>
+<li>L'inventaire d'un personnage se compose d'un nombre de pièces d'or et d'un nombre de clés.</li>
+<li>Tous les personnages possèdent initialement 10 pièces d'or et une clé.</li>
+<li>L'inventaire doit être affiché dans la description d'un joueur.</li>
+<li>Lorsqu'un personnage tue un adversaire, il récupère dans son propre inventaire le nombre de pièces d'or et de clés de cet adversaire.</li>
+</ul>
+<p><a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre9_exercice2.js">answer</a></p>
+<pre class="hljs"><code><div><span class="hljs-comment">// Ajoutez votre code ici</span>
+​
+<span class="hljs-comment">// "Aurora a 150 points de vie, 25 en force et 0 points d'expérience, 10 pièces d'or et 1 clé(s)"</span>
+<span class="hljs-keyword">const</span> aurora = <span class="hljs-keyword">new</span> Personnage(<span class="hljs-string">"Aurora"</span>, <span class="hljs-number">150</span>, <span class="hljs-number">25</span>);
+​
+<span class="hljs-built_in">console</span>.log(aurora.decrire());
+​
+<span class="hljs-keyword">const</span> monstre = <span class="hljs-keyword">new</span> Personnage(<span class="hljs-string">"ZogZog"</span>, <span class="hljs-number">20</span>, <span class="hljs-number">10</span>);
+monstre.attaquer(aurora);
+aurora.attaquer(monstre); <span class="hljs-comment">// Le monstre est tué</span>
+​
+<span class="hljs-comment">// "Aurora a 140 points de vie, 25 en force et 10 points d'expérience, 20 pièces d'or et 2 clé(s)"</span>
+<span class="hljs-built_in">console</span>.log(aurora.decrire());
+</div></code></pre>
+<p>​
+​* Liste de comptes bancaires</p>
+<p>Reprenons le contexte des comptes en banque issu d'un précédent exercice. Un compte bancaire sera modélisé par une classe définie comme suit :</p>
+<ul>
+<li>Une propriété titulaire initialisée par le constructeur.</li>
+<li>Une propriété solde valant initialement 0.</li>
+<li>Une méthode crediter() ajoutant le montant passé en paramètre (éventuellement négatif) au solde du compte.</li>
+<li>Une méthode decrire() renvoyant la description du compte.</li>
+</ul>
+<p>Ecrivez un programme qui crée 3 comptes bancaires, l'un appartenant à Alex, le deuxième à CLovis et le troisième à Marco. Stockez ces comptes dans un tableau.</p>
+<p>Ensuite, le programme crédite 1000 € et affiche la description de chacun des comptes.</p>
+<p><a href="https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre9_exercice3.js">answer</a></p>
+<h2 id="vocabulaire">Vocabulaire</h2>
+<p>Le programmeur est un créateur d'univers dont il est seul responsable.</p>
+<p>L'eau bout a 100 degres.</p>
+<p>Depuis son invention dans les années 1950, l'informatique a révolutionné bien des domaines de notre vie quotidienne.</p>
+<p><strong>Depuis son apparition dans les années 1950, l'informatique a changé beaucoup de domaines de notre vie quotidienne.</strong></p>
+
+</body>
+</html>
