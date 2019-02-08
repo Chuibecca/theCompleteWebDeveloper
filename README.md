@@ -602,7 +602,7 @@ Une méthode crediter() ajoutant le montant passé en paramètre (éventuellemen
 Une méthode decrire() renvoyant la description du compte.
 Utilisez cet objet pour afficher sa description, le créditer de 250, puis le débiter de 80, et enfin afficher de nouveau sa description.
 
-[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre5_exercice3.js)
+[answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre6_exercice3.js)
 ### Chapter 7
 * Les Trois Mousquetaires
 
