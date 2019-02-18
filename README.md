@@ -334,7 +334,7 @@ console.log(compte.decrire());
 ```
 ## Exercices
 
-[Answerkey](https://github.com/oc-courses/intro-javascript)
+[Answerkey](https://github.com/xiaoouwang/theCompleteWebDeveloper/blob/master/answer.js)
 
 ### Chapter 1
 * Ecrivez un programme qui affiche votre nom, puis votre âge.
