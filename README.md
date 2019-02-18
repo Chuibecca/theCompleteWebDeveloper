@@ -124,7 +124,7 @@ commande -p 14  = commande --parametre=14
 
 - [ ] [javascriptTheWeirdParts](https://www.udemy.com/understand-javascript/)
 
-- [x] [thejsWayAnswer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway) [thejsWayFrench](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published)  ![alt](http://progressed.io/bar/100?title=completed)
+- [ ] [thejsWayAnswer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway) [thejsWayFrench](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published)  ![alt](http://progressed.io/bar/90?title=readThroughChapter3)
 
 
 
@@ -831,7 +831,6 @@ Ensuite, le programme crédite 1000 € et affiche la description de chacun des 
 
 [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre9_exercice3.js)
 
-
 ## Vocabulaire
 Le programmeur est un créateur d'univers dont il est seul responsable.
 
@@ -840,3 +839,5 @@ L'eau bout a 100 degres.
 Depuis son invention dans les années 1950, l'informatique a révolutionné bien des domaines de notre vie quotidienne.
 
 **Depuis son apparition dans les années 1950, l'informatique a changé beaucoup de domaines de notre vie quotidienne.**
+
+Albeit = although
