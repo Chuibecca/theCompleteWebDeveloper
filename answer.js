@@ -245,7 +245,7 @@ const aurora = {
 	sante: 150,
 	force: 25,
 	xp: 0,
-// "Aurora a 150 points de vie, 25 en force et 0 points d'expérience"
+	// "Aurora a 150 points de vie, 25 en force et 0 points d'expérience"
 	decrire() {
 		return `${this.nom} a ${this.sante} de vie, ${this.force} en force et ${this.xp} d'experience`;
 	}
@@ -276,4 +276,243 @@ console.log(`${chien.nom} est un ${chien.race} mesurant ${chien.taille} cm`);
 // "Tiens, un chat ! Crockdur aboie : Grrr ! Grrr !"
 console.log(`Tiens, un chat ! ${chien.nom} aboie : ${chien.aboyer()}`);
 // Exercise 3
+// Une propriété titulaire valant "Alex". Une propriété solde valant initialement 0. Une méthode crediter() ajoutant le montant passé en paramètre (éventuellement négatif) au solde du compte. Une méthode decrire() renvoyant la description du compte. Utilisez cet objet pour afficher sa description, le créditer de 250, puis le débiter de 80, et enfin afficher de nouveau sa description.
+
+const compte = {
+	titulaire: "Alex",
+	solde: 0,
+	crediter(params) {
+		this.solde = this.solde + params;
+	},
+	debiter(params) {
+		this.solde -= params;
+	},
+	decrire(params) {
+		return `${this.titulaire} has ${this.solde} left`;
+	}
+
+}
+
+compte.crediter(30);
+compte.debiter(10);
+console.log(compte.decrire());
+
+// Chapter 7
+// Exercise 1
+tableauMousquetaire = ["Athos", "Porthos", "Aramis"];
+tableauMousquetaire.forEach(element => {
+	console.log(element);
+});
+tableauMousquetaire.push("Artagnan");
+console.log(tableauMousquetaire);
+for (let i = 0; i < tableauMousquetaire.length; i++) {
+	console.log(tableauMousquetaire[i]);
+}
+for (const iterator of tableauMousquetaire) {
+	console.log(iterator);
+}
+tableauMousquetaire.splice(2, 1);
+console.log(tableauMousquetaire);
+// Exercise 2
+const nombres = [11, 3, 7, 2, 9, 10];
+
+// Ajoutez votre code ici
+function somme(params) {
+	startNumber = 0;
+	for (let i = 0; i < params.length; i++) {
+		startNumber += params[i];
+	}
+	return startNumber;
+}
+
+console.log(somme(nombres));
+// Exercise 3
+const valeurs = [3, 11, 7, 2, 9, 10];
+let maximumNumber = valeurs[0];
+for (let i = 0; i < valeurs.length; i++) {
+	if (valeurs[i] > maximumNumber) {
+		maximumNumber = valeurs[i];
+	}
+}
+console.log(maximumNumber);
+// Chapter 8
+// Exercise 1
+const compterVoyelles = (word) => {
+	let nombreVoyelles = 0;
+	for (const iterator of word) {
+		const lettreMin = iterator.toLowerCase();
+		console.log(iterator);
+		if (lettreMin === "a" || lettreMin === "i" || lettreMin === "e" || lettreMin === "o" || lettreMin === "u" || lettreMin === "y") {
+			nombreVoyelles++;
+		}
+	}
+	console.log(nombreVoyelles);
+	return nombreVoyelles;
+}
+
+console.log(compterVoyelles('RadA')); // 2
+console.log(compterVoyelles("Tic et Tac")); // 3
+console.log(compterVoyelles("Oasis Oasis Oh")); // 7
+// Exercise 2
+// Ajoutez votre code ici
+const convertLetters = (lettre) => {
+	switch (lettre) {
+		case "a":
+			lettre = "4";
+			break;
+		case "b":
+			lettre = "8";
+			break;
+		case "e":
+			lettre = "3";
+			break;
+		case "i":
+			lettre = "1";
+			break;
+		case "o":
+			lettre = "0";
+			break;
+		case "s":
+			lettre = "5";
+			break;
+		default:
+			break;
+	}
+	return lettre;
+}
+
+const convertWord = (word) => {
+	let motLeet = "";
+	for (const lettre of word) {
+		motLeet += convertLetters(lettre);
+	}
+	return motLeet;
+}
+
+
+
+console.log(convertWord("Hello World!")); // "H3110 W0r1d!"
+console.log(convertWord("Noob")); // "N008"
+console.log(convertWord("Hacker")); // "H4ck3r"
+
+// Exercise 3
+// AJoutez votre code ici
+const estPalindrome = (word) => {
+	word = word.toLowerCase();
+	for (let i = 0; i < word.length; i++) {
+		if (word[i] === word[word.length - 1 - i]) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
+
+console.log(estPalindrome("RastAr")); // true
+console.log(estPalindrome("KAYAk")); // true
+console.log(estPalindrome("Bora-Bora")); // false
+console.log(estPalindrome("hes")); // false
+// Chapter 9
+// Exercise 1
+class Chien {
+	constructor(nom, race, taille) {
+		this.nom = nom;
+		this.race = race;
+		this.taille = taille;
+	}
+	aboyer(params) {
+		if (this.taille > 50) return "Grrr ! Grrr !";
+		return "Wouaf ! Wouaf !";
+	}
+	decrire(params) {
+		return `${this.nom} est un ${this.race} mesurant ${this.taille} cm`;
+	}
+}
+
+const crockdur = new Chien("Crockdur", "mâtin de Naples", 75);
+// "Crockdur est un mâtin de Naples mesurant 75 cm"
+console.log(crockdur.decrire());
+// "Tiens, un chat ! Crockdur aboie : Grrr ! Grrr !"
+console.log(`Tiens, un chat ! ${crockdur.nom} aboie : ${crockdur.aboyer()}`);
+
+const milou = new Chien("Milou", "fox-terrier", 26);
+// "Milou est un fox-terrier mesurant 26 cm"
+console.log(milou.decrire());
+// "Tiens, un chat ! Milou aboie : Wouaf ! Wouaf !"
+console.log(`Tiens, un chat ! ${milou.nom} aboie : ${milou.aboyer()}`);
+// Exercise 2
+class Personnage {
+	constructor(nom, sante, force) {
+		this.nom = nom;
+		this.sante = sante;
+		this.force = force;
+		this.xp = 0; // Toujours 0 au début
+		// l'inventaire est géré sous la forme d'un objet ayant deux propriétés
+		this.inventaire = {
+			or: 10,
+			cles: 1
+		};
+	}
+	attaquer(adversaire) {
+		if (this.sante > 0) {
+			const degats = this.force;
+			console.log('{this.nom} attaque ${adversaire.nom} et lui inflige ${degats} points de dégâts');
+			adversaire.sante -= this.force;
+			if (adversaire.sante > 0) {
+				console.log(`${adversaire.nom} a encore ${adversaire.sante} points de vie`);
+			} else {
+				adversaire.sante = 0;
+				const bonusXp = 0;
+				const bonusXP = 10;
+				console.log(`${this.nom} a tué ${adversaire.nom} et gagne ${bonusXP} points d'expérience, ${adversaire.inventaire.or} pièces d'or et ${adversaire.inventaire.cles} clé(s)`
+				);
+				this.xp += bonusXP;
+				this.inventaire.or += adversaire.inventaire.or;
+				this.inventaire.cles += adversaire.inventaire.cles;
+				console.log('${adversaire.nom} est tue');
+			}
+			} else {
+					console.log(`${this.nom} ne peut pas attaquer`);
+
+			}
+
+
+		}
+		// Lorsqu'un personnage tue un adversaire, il récupère dans son propre inventaire le nombre de pièces d'or et de clés de cet adversaire.
+	decrire() {
+		return `${this.nom} a ${this.sante} points de vie, ${this.force} en force et ${this.xp} points d'expérience, ${this.inventaire.or} pièces d'or et ${this.inventaire.cles} clé(s)`;
+	}
+
+}
+
+const aurore = new Personnage("aurore", 150, 25);
+console.log(aurore.decrire());
+
+const monstre = new Personnage("ZogZog", 20, 10);
+console.log(monstre.decrire());
+monstre.attaquer(aurore);
+aurore.attaquer(monstre); // Le monstre est tué
+console.log(aurore.decrire());
+// Exercise 3
+class CompteBancaire {
+	constructor(nom) {
+		this.nom = nom;
+		this.solde = 0;
+	}
+	crediter(montant) {
+		this.solde += montant;
+	}
+	decrire(params) {
+		return `${this.nom} a ${this.solde} dans son compte`;
+	}
+}
+
+const tableauDesComptes = [];
+tableauDesComptes.push(new CompteBancaire('Alex'));
+tableauDesComptes.push(new CompteBancaire('Clovis'));
+tableauDesComptes.push(new CompteBancaire('Marco'));
+tableauDesComptes.forEach(compte => {
+	compte.crediter(1000);
+	console.log(compte.decrire());
+});
 
