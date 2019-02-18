@@ -35,6 +35,7 @@
 
 ## github
 git pull origin master --allow-unrelated-histories
+
 show branch:  export PS1="\\w:\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$ "
 
 ## Vim
@@ -110,7 +111,7 @@ commande -p 14  = commande --parametre=14
 
 ## online courses
 
-- [ ]	[bash](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/39267-nano-lediteur-de-texte-du-debutant)  ![alt](http://progressed.io/bar/36)
+- [ ]	[bash](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/39267-nano-lediteur-de-texte-du-debutant)  ![alt](http://progressed.io/bar/36?title=easyGoing)
 
 
 - [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
@@ -123,7 +124,8 @@ commande -p 14  = commande --parametre=14
 
 - [ ] [javascriptTheWeirdParts](https://www.udemy.com/understand-javascript/)
 
-- [x] [thejsWayAnswer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway) [thejsWayFrench](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published)
+- [x] [thejsWayAnswer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway) [thejsWayFrench](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published)  ![alt](http://progressed.io/bar/100?title=completed)
+
 
 
 - [ ] [regularExpressions](https://regexone.com/)
