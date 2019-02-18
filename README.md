@@ -60,28 +60,51 @@ zz
 :  go to 13th line
 ## Command line
 ![](img/2019-02-18-21-09-01.png)
+
 ls -a  = ls --all (only in linux)  ls -i
+
 ls + nom du dossier
+
 date cal
+
 <kbd>ctrl + r</kbd> search in the past commands
+
 pwd which pwd ls -FG ls -lhtr  ls -larth  (larth)
+
 head tail -f tail -f -s 3 syslog
+
 touch a b c  mkdir  a b mkdir -p animaux/vertebres/chat
+
 cp fichierbidon mondossier/    cp -R cp *.jpg mondossier/(wildcard)
+
 rm a b -i -f -r
+
 cd = go to home cd - = go to the previous directory  du -sh
+
 cat -n  ln (lien physique) ln -s (lien symbolique fonctionnant aussi sur les repertoires)
+
 sudo su adduser deluser passwd deluser --remove-home patrick addgroup   usermod -aG amis patrick
+
 chown patrick rapport.txt  chgrp amis rapport.txt  chown patrick:amis rapport.txt   -R
+
 chmod  chmod 600 rapport.txt   -R aussi
+
 ![](img/2019-02-18-21-10-14.png)
+
 commande -d -a -U -h = commande -daUh
+
 commande --parametre long --another parametre long
+
 commande -p 14  = commande --parametre=14
+
 [someKeyboardShortkey](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/38076-entrer-une-commande)
+
 [directoryStructure](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/38351-la-structure-des-dossiers-et-fichiers)
+
 [lessRaccourci](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/38696-manipuler-les-fichiers)
+
 [droits](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/39044-les-utilisateurs-et-les-droits)
+
 
 
 
