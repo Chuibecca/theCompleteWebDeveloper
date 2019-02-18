@@ -110,7 +110,8 @@ commande -p 14  = commande --parametre=14
 
 ## online courses
 
-- [ ]	[bash](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/39267-nano-lediteur-de-texte-du-debutant)
+- [ ]	[bash](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/39267-nano-lediteur-de-texte-du-debutant)  ![alt](http://progressed.io/bar/36)
+
 
 - [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
 
