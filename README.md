@@ -8,6 +8,7 @@
 	- [Markdown cheetsheet](#markdown-cheetsheet)
 	- [github](#github)
 	- [Vim](#vim)
+	- [Command line](#command-line)
 	- [online courses](#online-courses)
 	- [Books](#books)
 	- [Bases](#bases)
@@ -33,9 +34,8 @@
 [link](https://en.support.wordpress.com/markdown-quick-reference/)
 
 ## github
-```git
 git pull origin master --allow-unrelated-histories
-```
+show branch:  export PS1="\\w:\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$ "
 
 ## Vim
 
@@ -58,8 +58,37 @@ zz
 
 13gg
 :  go to 13th line
+## Command line
+![](img/2019-02-18-21-09-01.png)
+ls -a  = ls --all (only in linux)  ls -i
+ls + nom du dossier
+date cal
+<kbd>ctrl + r</kbd> search in the past commands
+pwd which pwd ls -FG ls -lhtr  ls -larth  (larth)
+head tail -f tail -f -s 3 syslog
+touch a b c  mkdir  a b mkdir -p animaux/vertebres/chat
+cp fichierbidon mondossier/    cp -R cp *.jpg mondossier/(wildcard)
+rm a b -i -f -r
+cd = go to home cd - = go to the previous directory  du -sh
+cat -n  ln (lien physique) ln -s (lien symbolique fonctionnant aussi sur les repertoires)
+sudo su adduser deluser passwd deluser --remove-home patrick addgroup   usermod -aG amis patrick
+chown patrick rapport.txt  chgrp amis rapport.txt  chown patrick:amis rapport.txt   -R
+chmod  chmod 600 rapport.txt   -R aussi
+![](img/2019-02-18-21-10-14.png)
+commande -d -a -U -h = commande -daUh
+commande --parametre long --another parametre long
+commande -p 14  = commande --parametre=14
+[someKeyboardShortkey](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/38076-entrer-une-commande)
+[directoryStructure](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/38351-la-structure-des-dossiers-et-fichiers)
+[lessRaccourci](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/38696-manipuler-les-fichiers)
+[droits](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/39044-les-utilisateurs-et-les-droits)
+
+
 
 ## online courses
+
+- [ ]	[bash](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/39267-nano-lediteur-de-texte-du-debutant)
+
 - [ ] [javascriptCourseComplete](https://www.udemy.com/the-complete-javascript-course/)
 
 - [ ] [webDevlopperFromZerotoMastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/)
@@ -70,7 +99,7 @@ zz
 
 - [ ] [javascriptTheWeirdParts](https://www.udemy.com/understand-javascript/)
 
-- [ ] [thejsWayAnswer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway) [thejsWayFrench](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published)
+- [x] [thejsWayAnswer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway) [thejsWayFrench](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published)
 
 
 - [ ] [regularExpressions](https://regexone.com/)
