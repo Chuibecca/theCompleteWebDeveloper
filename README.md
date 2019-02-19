@@ -1,43 +1,41 @@
-# The complete web developer
-
+ The complete web developer
+## Header
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ----
 
-- [The complete web developer](#the-complete-web-developer)
-	- [Markdown cheetsheet](#markdown-cheetsheet)
-	- [github](#github)
-	- [Vim](#vim)
-	- [Command line](#command-line)
-	- [online courses](#online-courses)
-	- [Books](#books)
-	- [Bases](#bases)
-	- [Some routines](#some-routines)
-	- [Difference between let and var (ECMAScript 6 2015)](#difference-between-let-and-var-ecmascript-6-2015)
-	- [template literal +](#template-literal)
-	- [Type conversion](#type-conversion)
-	- [if](#if)
-	- [function vs procedure vs methode](#function-vs-procedure-vs-methode)
-	- [Exercices](#exercices)
-		- [Chapter 1](#chapter-1)
-		- [Chapter 2](#chapter-2)
-		- [Chapter 3](#chapter-3)
-		- [Chapter 4](#chapter-4)
-		- [Chapter 5](#chapter-5)
-		- [Chapter 6](#chapter-6)
-		- [Chapter 7](#chapter-7)
-		- [Chapter 8](#chapter-8)
-		- [Chapter 9](#chapter-9)
-	- [Vocabulaire](#vocabulaire)
-
+- [Header](#header)
+- [Markdown cheetsheet](#markdown-cheetsheet)
+- [Github](#github)
+- [Vim](#vim)
+- [Command line](#command-line)
+- [online courses](#online-courses)
+- [Books](#books)
+- [DataBase](#database)
+- [Bases](#bases)
+- [Some routines](#some-routines)
+- [Difference between let and var (ECMAScript 6 2015)](#difference-between-let-and-var-ecmascript-6-2015)
+- [Template literal +](#template-literal)
+- [Type conversion](#type-conversion)
+- [If](#if)
+- [Function vs procedure vs methode](#function-vs-procedure-vs-methode)
+- [Exercices](#exercices)
+	- [Chapter 1](#chapter-1)
+	- [Chapter 2](#chapter-2)
+	- [Chapter 3](#chapter-3)
+	- [Chapter 4](#chapter-4)
+	- [Chapter 5](#chapter-5)
+	- [Chapter 6](#chapter-6)
+	- [Chapter 7](#chapter-7)
+	- [Chapter 8](#chapter-8)
+	- [Chapter 9](#chapter-9)
+- [Vocabulaire](#vocabulaire)
 ## Markdown cheetsheet
 [link](https://en.support.wordpress.com/markdown-quick-reference/)
-
-## github
+## Github
 git pull origin master --allow-unrelated-histories
 
 show branch:  export PS1="\\w:\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$ "
-
 ## Vim
 
 [substitute](http://vim.wikia.com/wiki/Search_and_replace)
@@ -105,10 +103,6 @@ commande -p 14  = commande --parametre=14
 [lessRaccourci](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/38696-manipuler-les-fichiers)
 
 [droits](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/39044-les-utilisateurs-et-les-droits)
-
-
-
-
 ## online courses
 
 - [ ]	[bash](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/39267-nano-lediteur-de-texte-du-debutant)  ![alt](http://progressed.io/bar/36?title=easyGoing)
@@ -124,16 +118,13 @@ commande -p 14  = commande --parametre=14
 
 - [ ] [javascriptTheWeirdParts](https://www.udemy.com/understand-javascript/)
 
-- [ ] [thejsWayAnswer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway) [thejsWayFrench](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published)  ![alt](http://progressed.io/bar/90?title=readThroughChapter3)
+- [x] [thejsWayAnswer](https://github.com/oc-courses/intro-javascript) [thejsWayEnglish](https://github.com/bpesquet/thejsway) [thejsWayFrench](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript?status=published)  ![alt](http://progressed.io/bar/100?title=completed)
 
 
 
 - [ ] [regularExpressions](https://regexone.com/)
 - [ ] [comprendreLeWeb](https://openclassrooms.com/fr/courses/1946386-comprendre-le-web)
 - [ ] [GithubOpenCLassroom](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github)
-
-
-
 ## Books
 [eloquent javascript](https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_7?ie=UTF8&qid=1548950313&sr=8-7&keywords=javascript)
 
@@ -142,8 +133,8 @@ commande -p 14  = commande --parametre=14
 [Secrets of the JavaScript Ninja](https://www.amazon.com/dp/1617292850/ref=sspa_dk_detail_1?psc=1)
 
 [javascriptThegoodparts](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?s=books&ie=UTF8&qid=1548950389&sr=1-1&keywords=javascript+the+good+parts)
-
-
+## DataBase
+[FrenchGov](https://www.data.gouv.fr/
 ## Bases
 
 Un programme informatique (également appelé application ou logiciel) est une liste d'ordres indiquant à un ordinateur ce qu'il doit faire.
@@ -166,9 +157,6 @@ Le seul langage de programmation directement compréhensible par un ordinateur e
 source un ensemble de fichiers pouvant être exécutés sur n'importe quelle plate-forme supportant
 l'environnement. C'est le cas du langage Java et des langages de la plate-forme Microsoft .NET
 (VB.NET, C#, etc).
-
-
-
 ## Some routines
 
 ```javascript
@@ -218,7 +206,7 @@ let num1 = 0;
 console.log(num1); // OK : num1 is declared in the current block
 console.log(num2); // Error! num2 is not visible here
 ```
-## template literal +
+## Template literal +
 ```javascript
 const country = "France";
 console.log(`I live in ${country}`); // Show "I live in France"
@@ -246,7 +234,7 @@ const temp2 = 37.6;
 const temp3 = 37.1;
 console.log(temp1, temp2, temp3); // Show "36.9 37.6 37.1"
 ```
-## if
+## If
 
 ```javascript
 const nombre = 3;
@@ -316,8 +304,7 @@ switch (x) {
 }
 
 ```
-
-## function vs procedure vs methode
+## Function vs procedure vs methode
 
 Une fonction qui ne renvoie pas de valeur est parfois appelée une procédure.
 
@@ -830,7 +817,6 @@ Ecrivez un programme qui crée 3 comptes bancaires, l'un appartenant à Alex, le
 Ensuite, le programme crédite 1000 € et affiche la description de chacun des comptes.
 
 [answer](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre9_exercice3.js)
-
 ## Vocabulaire
 Le programmeur est un créateur d'univers dont il est seul responsable.
 
@@ -839,5 +825,3 @@ L'eau bout a 100 degres.
 Depuis son invention dans les années 1950, l'informatique a révolutionné bien des domaines de notre vie quotidienne.
 
 **Depuis son apparition dans les années 1950, l'informatique a changé beaucoup de domaines de notre vie quotidienne.**
-
-Albeit = although
